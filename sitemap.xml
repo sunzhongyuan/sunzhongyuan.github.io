@@ -2,49 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2018/06/24/3333/</loc>
+    <loc>http://sunzhongyuan.net/2018/08/12/hexo/</loc>
+    
+    <lastmod>2018-08-11T19:03:00.529Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://sunzhongyuan.net/2018/06/24/3333/</loc>
     
     <lastmod>2018-06-24T16:05:14.768Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/06/24/test/</loc>
+    <loc>http://sunzhongyuan.net/2018/06/24/test/</loc>
     
     <lastmod>2018-06-24T16:04:16.774Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/06/24/2222/</loc>
+    <loc>http://sunzhongyuan.net/2018/06/24/2222/</loc>
     
     <lastmod>2018-06-24T16:04:01.708Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://sunzhongyuan.net/tags/index.html</loc>
     
     <lastmod>2018-06-24T15:56:02.407Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>http://sunzhongyuan.net/categories/index.html</loc>
     
     <lastmod>2018-06-24T15:47:19.103Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/06/24/hello-world2/</loc>
+    <loc>http://sunzhongyuan.net/2018/06/24/hello-world2/</loc>
     
     <lastmod>2018-06-24T12:43:57.740Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/06/24/hello-world/</loc>
+    <loc>http://sunzhongyuan.net/2018/06/24/hello-world/</loc>
     
     <lastmod>2018-06-24T12:42:50.200Z</lastmod>
     

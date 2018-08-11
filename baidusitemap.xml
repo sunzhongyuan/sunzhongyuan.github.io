@@ -4,7 +4,27 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/06/24/3333/</loc>
+    <loc>http://sunzhongyuan.net/2018/08/12/hexo/</loc>
+    <lastmod>2018-08-11T19:03:00.529Z</lastmod>
+    <data>
+        <display>
+        <title>个人博客 GitHub Pages + Hexo</title>
+        <pubTime>2018-08-11T17:30:35.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://sunzhongyuan.net/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sunzhongyuan.net/2018/06/24/3333/</loc>
     <lastmod>2018-06-24T16:05:14.768Z</lastmod>
     <data>
         <display>
@@ -16,10 +36,10 @@
          
            
              
-              <breadCrumb title="语言" url="http://yoursite.com/categories/%E8%AF%AD%E8%A8%80/"/>
+              <breadCrumb title="语言" url="http://sunzhongyuan.net/categories/%E8%AF%AD%E8%A8%80/"/>
           
              
-              <breadCrumb title="python" url="http://yoursite.com/categories/%E8%AF%AD%E8%A8%80/python/"/>
+              <breadCrumb title="python" url="http://sunzhongyuan.net/categories/%E8%AF%AD%E8%A8%80/python/"/>
           
         </display>
     </data>
@@ -27,7 +47,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/06/24/test/</loc>
+    <loc>http://sunzhongyuan.net/2018/06/24/test/</loc>
     <lastmod>2018-06-24T16:04:16.774Z</lastmod>
     <data>
         <display>
@@ -39,7 +59,7 @@
          
            
              
-              <breadCrumb title="java" url="http://yoursite.com/categories/java/"/>
+              <breadCrumb title="java" url="http://sunzhongyuan.net/categories/java/"/>
           
         </display>
     </data>
@@ -47,7 +67,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/06/24/2222/</loc>
+    <loc>http://sunzhongyuan.net/2018/06/24/2222/</loc>
     <lastmod>2018-06-24T16:04:01.708Z</lastmod>
     <data>
         <display>
@@ -59,10 +79,10 @@
          
            
              
-              <breadCrumb title="语言" url="http://yoursite.com/categories/%E8%AF%AD%E8%A8%80/"/>
+              <breadCrumb title="语言" url="http://sunzhongyuan.net/categories/%E8%AF%AD%E8%A8%80/"/>
           
              
-              <breadCrumb title="java" url="http://yoursite.com/categories/%E8%AF%AD%E8%A8%80/java/"/>
+              <breadCrumb title="java" url="http://sunzhongyuan.net/categories/%E8%AF%AD%E8%A8%80/java/"/>
           
         </display>
     </data>
@@ -72,7 +92,7 @@
     
     
   <url>
-    <loc>http://yoursite.com/2018/06/24/hello-world2/</loc>
+    <loc>http://sunzhongyuan.net/2018/06/24/hello-world2/</loc>
     <lastmod>2018-06-24T12:43:57.740Z</lastmod>
     <data>
         <display>
@@ -87,7 +107,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/06/24/hello-world/</loc>
+    <loc>http://sunzhongyuan.net/2018/06/24/hello-world/</loc>
     <lastmod>2018-06-24T12:42:50.200Z</lastmod>
     <data>
         <display>
