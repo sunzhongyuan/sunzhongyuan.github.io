@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-08-13T14:06:48.351Z</updated>
+  <updated>2018-08-20T15:23:37.902Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python必备-virtualenv和virtualenvwrapper总结</title>
+    <link href="http://sunzhongyuan.net/2018/08/18/Virtualenv/"/>
+    <id>http://sunzhongyuan.net/2018/08/18/Virtualenv/</id>
+    <published>2018-08-18T05:57:16.000Z</published>
+    <updated>2018-08-20T15:23:37.902Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;为什么要用Virtualenv&quot;&gt;&lt;a href=&quot;#为什么要用Virtualenv&quot; class=&quot;headerlink&quot; title=&quot;为什么要用Virtualenv&quot;&gt;&lt;/a&gt;为什么要用&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://sunzhongyuan.net/categories/python/"/>
+    
+      <category term="Virtualenv" scheme="http://sunzhongyuan.net/categories/python/Virtualenv/"/>
+    
+    
+      <category term="Virtualenv" scheme="http://sunzhongyuan.net/tags/Virtualenv/"/>
+    
+  </entry>
   
   <entry>
     <title>个人博客 GitHub Pages + Hexo</title>
