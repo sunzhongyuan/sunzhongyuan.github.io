@@ -427,12 +427,17 @@
 
       
         
-          
-          为什么要用Virtualenv
-python项目与Java项目不同，Java的每一个项目都会将需要的库重新引用到自己的项目文件夹中；
-而在同一开发环境中，python的所有项目都共用一个开发库，将多个项目的包混在一起，这样不利于管理，还会造成包冲突；
-所以我们需要用到Virtualenv，它用于创建
-          ...
+          <h3 id="Virtualenv"><a href="#Virtualenv" class="headerlink" title="Virtualenv"></a><a href="https://virtualenv.pypa.io/en/stable/" target="_blank" rel="noopener">Virtualenv</a></h3><ul>
+<li>python项目与Java项目不同，Java的每一个项目都会将需要的库重新引用到自己的项目文件夹中；</li>
+<li>而在同一开发环境中，python的所有项目都共用一个开发库，将多个项目的包混在一起，这样不利于管理，还会造成包冲突；</li>
+<li>所以我们需要用到Virtualenv，<strong>它用于创建独立的python开发环境</strong>；</li>
+<li>可以保证每一个项目都有独立的开发环境，包括不同的python版本。</li>
+</ul>
+<h3 id="virtualenvwrapper"><a href="#virtualenvwrapper" class="headerlink" title="virtualenvwrapper"></a><a href="https://virtualenvwrapper.readthedocs.io/en/latest/" target="_blank" rel="noopener">virtualenvwrapper</a></h3><ul>
+<li>它是基于virtualenv之上的管理工具，用来统一管理这些独立的开发环境（虚拟环境）。</li>
+</ul>
+<h3 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h3><h4 id="0-安装Virtualenv"><a href="#0-安装Virtualenv" class="headerlink" title="0.安装Virtualenv"></a>0.安装Virtualenv</h4><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> virtualenv</span><br></pre></td></tr></table></figure>
+<h4 id="1-安装virtualenvwrapper"><a href="#1-安装virtualenvwrapper" class="headerlink" title="1.安装virtualenvwrapper"></a>1.安装virtualenvwrapper</h4><p>如果你练习了virtualenv命令，注意请先退出虚拟环境，并切换到用户目录执行，否则会安装到虚拟环境；<br></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/08/18/Virtualenv/#more" rel="contents">
