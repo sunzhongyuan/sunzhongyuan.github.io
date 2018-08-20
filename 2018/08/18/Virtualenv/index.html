@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="sunzhongyuan">
 <meta property="og:description" content="Virtualenv python项目与Java项目不同，Java的每一个项目都会将需要的库重新引用到自己的项目文件夹中； 而在同一开发环境中，python的所有项目都共用一个开发库，将多个项目的包混在一起，这样不利于管理，还会造成包冲突； 所以我们需要用到Virtualenv，它用于创建独立的python开发环境； 可以保证每一个项目都有独立的开发环境，包括不同的python版本。  virtu">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-20T15:33:22.652Z">
+<meta property="og:updated_time" content="2018-08-20T15:38:37.401Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python必备-virtualenv和virtualenvwrapper总结">
 <meta name="twitter:description" content="Virtualenv python项目与Java项目不同，Java的每一个项目都会将需要的库重新引用到自己的项目文件夹中； 而在同一开发环境中，python的所有项目都共用一个开发库，将多个项目的包混在一起，这样不利于管理，还会造成包冲突； 所以我们需要用到Virtualenv，它用于创建独立的python开发环境； 可以保证每一个项目都有独立的开发环境，包括不同的python版本。  virtu">
@@ -435,7 +435,8 @@
 <li>它是基于virtualenv之上的管理工具，用来统一管理这些独立的开发环境（虚拟环境）。</li>
 </ul>
 <h3 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h3><h4 id="0-安装Virtualenv"><a href="#0-安装Virtualenv" class="headerlink" title="0.安装Virtualenv"></a>0.安装Virtualenv</h4><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> virtualenv</span><br></pre></td></tr></table></figure>
-<h4 id="1-安装virtualenvwrapper"><a href="#1-安装virtualenvwrapper" class="headerlink" title="1.安装virtualenvwrapper"></a>1.安装virtualenvwrapper</h4><p>如果你练习了virtualenv命令，注意请先退出虚拟环境，并切换到用户目录执行，否则会安装到虚拟环境；<br><a id="more"></a><br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> virtualenvwrapper</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h4 id="1-安装virtualenvwrapper"><a href="#1-安装virtualenvwrapper" class="headerlink" title="1.安装virtualenvwrapper"></a>1.安装virtualenvwrapper</h4><p>注意请先<strong>切换到用户目录</strong>，并退出虚拟环境后安装，否则会安装到虚拟环境；<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> virtualenvwrapper</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>Windows执行这个，<a href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank" rel="noopener">Windows版官方文档</a><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip <span class="keyword">install</span> virtualenvwrapper-win</span><br></pre></td></tr></table></figure>
 </li>

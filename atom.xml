@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-08-20T15:33:22.652Z</updated>
+  <updated>2018-08-20T15:38:37.401Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://sunzhongyuan.net/2018/08/18/Virtualenv/"/>
     <id>http://sunzhongyuan.net/2018/08/18/Virtualenv/</id>
     <published>2018-08-18T05:57:16.000Z</published>
-    <updated>2018-08-20T15:33:22.652Z</updated>
+    <updated>2018-08-20T15:38:37.401Z</updated>
     
     <summary type="html">
     
@@ -35,7 +35,6 @@
 &lt;li&gt;它是基于virtualenv之上的管理工具，用来统一管理这些独立的开发环境（虚拟环境）。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;快速上手&quot;&gt;&lt;a href=&quot;#快速上手&quot; class=&quot;headerlink&quot; title=&quot;快速上手&quot;&gt;&lt;/a&gt;快速上手&lt;/h3&gt;&lt;h4 id=&quot;0-安装Virtualenv&quot;&gt;&lt;a href=&quot;#0-安装Virtualenv&quot; class=&quot;headerlink&quot; title=&quot;0.安装Virtualenv&quot;&gt;&lt;/a&gt;0.安装Virtualenv&lt;/h4&gt;&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pip &lt;span class=&quot;keyword&quot;&gt;install&lt;/span&gt; virtualenv&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;1-安装virtualenvwrapper&quot;&gt;&lt;a href=&quot;#1-安装virtualenvwrapper&quot; class=&quot;headerlink&quot; title=&quot;1.安装virtualenvwrapper&quot;&gt;&lt;/a&gt;1.安装virtualenvwrapper&lt;/h4&gt;&lt;p&gt;如果你练习了virtualenv命令，注意请先退出虚拟环境，并切换到用户目录执行，否则会安装到虚拟环境；&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
