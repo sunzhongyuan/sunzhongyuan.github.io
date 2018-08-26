@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-08-26T13:32:26.527Z</updated>
+  <updated>2018-08-26T13:51:04.785Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -21,17 +21,20 @@
     <link href="http://sunzhongyuan.net/2018/08/26/Homebrew/"/>
     <id>http://sunzhongyuan.net/2018/08/26/Homebrew/</id>
     <published>2018-08-26T11:02:54.000Z</published>
-    <updated>2018-08-26T13:32:26.527Z</updated>
+    <updated>2018-08-26T13:51:04.785Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;什么是Homebrew&quot;&gt;&lt;a href=&quot;#什么是Homebrew&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h3 id=&quot;什么是Homebrew&quot;&gt;&lt;a href=&quot;#什么是Homebrew&quot; class=&quot;headerlink&quot; title=&quot;什么是Homebrew&quot;&gt;&lt;/a&gt;什么是Homebrew&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;维基百科这样说：Homebrew是一款自由及开放源代码的软件包管理系统，用以简化Mac OS X系统上的软件安装过程。&lt;a href=&quot;https://zh.wikipedia.org/wiki/Homebrew&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;[更多]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;说白了&lt;strong&gt;Homebrew就是Mac系统下的包管理器&lt;/strong&gt;，相当于Linux的apt-get。&lt;/li&gt;
+&lt;li&gt;和Linux的包管理器一样，Homebrew提供了简单的命令实现安装、更新、卸载包，并且还能维护包之间的依赖关系，能够帮助你安装一个包时自动安装它的依赖包。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;使用Homebrew能安装什么&quot;&gt;&lt;a href=&quot;#使用Homebrew能安装什么&quot; class=&quot;headerlink&quot; title=&quot;使用Homebrew能安装什么&quot;&gt;&lt;/a&gt;使用Homebrew能安装什么&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://brew.sh/index_zh-cn.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网&lt;/a&gt;有这么一句话：&lt;strong&gt;使用 Homebrew 安装 Apple 没有预装但 &lt;a href=&quot;https://formulae.brew.sh/formula/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;你需要的东西&lt;/a&gt;。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;也可以使用Homebrew提供的命令，通过关键字进行模糊搜索&lt;figure class=&quot;highlight haml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mac:~ zyzy$ brew search atom&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;=&lt;span class=&quot;ruby&quot;&gt;=&amp;gt; Formulae&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;ruby&quot;&gt;atomicparsley          datomic                libatomic_ops          mediatomb              sratom&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;ruby&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;ruby&quot;&gt;==&amp;gt; Casks   &lt;span class=&quot;comment&quot;&gt;# 有图形界面的软件&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;ruby&quot;&gt;homebrew/cask-versions/atom-beta                         homebrew/cask/atom&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
