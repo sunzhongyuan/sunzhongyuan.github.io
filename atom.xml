@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-08-20T15:38:37.401Z</updated>
+  <updated>2018-08-26T13:23:05.160Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac安装Homebrew笔记</title>
+    <link href="http://sunzhongyuan.net/2018/08/26/Homebrew/"/>
+    <id>http://sunzhongyuan.net/2018/08/26/Homebrew/</id>
+    <published>2018-08-26T11:02:54.000Z</published>
+    <updated>2018-08-26T13:23:05.160Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;什么是Homebrew&quot;&gt;&lt;a href=&quot;#什么是Homebrew&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="shell" scheme="http://sunzhongyuan.net/categories/shell/"/>
+    
+      <category term="mac" scheme="http://sunzhongyuan.net/categories/shell/mac/"/>
+    
+      <category term="brew" scheme="http://sunzhongyuan.net/categories/shell/mac/brew/"/>
+    
+    
+      <category term="Homebrew" scheme="http://sunzhongyuan.net/tags/Homebrew/"/>
+    
+      <category term="mac" scheme="http://sunzhongyuan.net/tags/mac/"/>
+    
+      <category term="brew" scheme="http://sunzhongyuan.net/tags/brew/"/>
+    
+  </entry>
   
   <entry>
     <title>python必备-virtualenv和virtualenvwrapper总结</title>

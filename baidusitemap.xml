@@ -4,6 +4,36 @@
 
     
   <url>
+    <loc>http://sunzhongyuan.net/2018/08/26/Homebrew/</loc>
+    <lastmod>2018-08-26T13:23:05.160Z</lastmod>
+    <data>
+        <display>
+        <title>mac安装Homebrew笔记</title>
+        <pubTime>2018-08-26T11:02:54.000Z</pubTime>
+        
+        <tag>Homebrew</tag>
+         
+        <tag>mac</tag>
+         
+        <tag>brew</tag>
+         
+         
+           
+             
+              <breadCrumb title="shell" url="http://sunzhongyuan.net/categories/shell/"/>
+          
+             
+              <breadCrumb title="mac" url="http://sunzhongyuan.net/categories/shell/mac/"/>
+          
+             
+              <breadCrumb title="brew" url="http://sunzhongyuan.net/categories/shell/mac/brew/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sunzhongyuan.net/2018/08/18/Virtualenv/</loc>
     <lastmod>2018-08-20T15:38:37.401Z</lastmod>
     <data>
