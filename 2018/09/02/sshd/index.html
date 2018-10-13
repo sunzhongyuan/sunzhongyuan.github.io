@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="sunzhongyuan">
 <meta property="og:description" content="首先确认系统是否安装了ssh服务输入service sshd status命令查看1234root@zyzy:/etc/ssh# service sshd status● sshd.service   Loaded: not-found (Reason: No such file or directory)   Active: inactive (dead) Loaded: not-found (">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-13T17:06:52.991Z">
+<meta property="og:updated_time" content="2018-10-13T17:10:02.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux开启ssh服务">
 <meta name="twitter:description" content="首先确认系统是否安装了ssh服务输入service sshd status命令查看1234root@zyzy:/etc/ssh# service sshd status● sshd.service   Loaded: not-found (Reason: No such file or directory)   Active: inactive (dead) Loaded: not-found (">
@@ -416,7 +416,7 @@
       
         <h3 id="首先确认系统是否安装了ssh服务"><a href="#首先确认系统是否安装了ssh服务" class="headerlink" title="首先确认系统是否安装了ssh服务"></a>首先确认系统是否安装了ssh服务</h3><p>输入<code>service sshd status</code>命令查看<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root@zyzy:/etc/ssh#<span class="built_in"> service </span>sshd status</span><br><span class="line">● sshd.service</span><br><span class="line">   Loaded: not-found (Reason: <span class="literal">No</span> such file <span class="keyword">or</span> directory)</span><br><span class="line">   Active: inactive (dead)</span><br></pre></td></tr></table></figure></p>
 <p><code>Loaded: not-found (Reason: No such file or directory)</code> 说明未安装ssh服务</p>
-<p><code>Active: inactive (dead)</code>说明ssh服务未启动</p>
+<p><code>Active: inactive (dead)</code>说明ssh服务未启动<br><a id="more"></a></p>
 <h3 id="安装ssh服务"><a href="#安装ssh服务" class="headerlink" title="安装ssh服务"></a>安装ssh服务</h3><p><code>sudo apt-get install openssh-server</code></p>
 <p>其他系统如redhat、centos执行以下命令</p>
 <p><code>sudo yum install openssh-server</code></p>
