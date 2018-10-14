@@ -13,6 +13,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Mac安装Linux虚拟机]]></title>
+    <url>%2F2018%2F09%2F01%2Fparallels%2F</url>
+    <content type="text"><![CDATA[推荐parallelsMac parallels desktop 13破解下载及安装 感谢！！！]]></content>
+      <categories>
+        <category>Mac</category>
+        <category>虚拟机</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+        <tag>虚拟机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[mac安装Homebrew]]></title>
     <url>%2F2018%2F08%2F26%2FHomebrew%2F</url>
     <content type="text"><![CDATA[什么是Homebrew 维基百科这样说：Homebrew是一款自由及开放源代码的软件包管理系统，用以简化Mac OS X系统上的软件安装过程。[更多] 说白了Homebrew就是Mac系统下的包管理器，相当于Linux的apt-get。 和Linux的包管理器一样，Homebrew提供了简单的命令实现安装、更新、卸载包，并且还能维护包之间的依赖关系，能够帮助你安装一个包时自动安装它的依赖包。 使用Homebrew能安装什么 官网有这样一句话：使用 Homebrew 安装 Apple 没有预装但 你需要的东西。 也可以使用Homebrew提供的命令，通过关键字进行模糊搜索123456mac:~ zyzy$ brew search atom==&gt; Formulaeatomicparsley datomic libatomic_ops mediatomb sratom==&gt; Casks # 有图形界面的软件homebrew/cask-versions/atom-beta homebrew/cask/atom 安装Homebrew1/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 更新Homebrew1brew update 卸载Homebrew1/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)" 使用Homebrew12345brew install &lt;packageName&gt; # 安装包brew uninstall &lt;packageName&gt; # 卸载包brew search &lt;packageName&gt; # 查询包brew list # 查询已安装的包brew info &lt;packageName&gt; # 查看包信息 PS. 正恶补sed命令，然而发现Mac和Linux上的sed命令有些差距，为降低学习成本，决定在Mac上安装gnu-sed。 12345678910111213141516171819202122232425262728mac:~ zyzy$ brew install gnu-sed --with-default-namesUpdating Homebrew...==&gt; Auto-updated Homebrew!Updated 1 tap (homebrew/core).No changes to formulae.==&gt; Downloading https://ftp.gnu.org/gnu/sed/sed-4.5.tar.xz######################################################################## 100.0%==&gt; ./configure --prefix=/usr/local/Cellar/gnu-sed/4.5==&gt; make install🍺 /usr/local/Cellar/gnu-sed/4.5: 10 files, 528.5KB, built in 1 minute 56 secondsmac:~ zyzy$ cd /usr/local/Cellar/gnu-sed/4.5mac:4.5 zyzy$ ltotal 352-rw-r--r-- 1 zyzy admin 318 8 28 2016 AUTHORS-rw-r--r-- 1 zyzy admin 731 1 17 2017 README-rw-r--r-- 1 zyzy admin 35151 3 7 21:59 COPYING-rw-r--r-- 1 zyzy admin 24088 4 1 09:39 NEWS-rw-r--r-- 1 zyzy admin 103611 4 1 09:40 ChangeLogdrwxr-xr-x 4 zyzy admin 128 8 26 20:59 sharedrwxr-xr-x 3 zyzy admin 96 8 26 20:59 bin-rw-r--r-- 1 zyzy admin 595 8 26 20:59 INSTALL_RECEIPT.jsonmac:4.5 zyzy$ cd binmac:bin zyzy$ ltotal 320-r-xr-xr-x 1 zyzy admin 161660 8 26 20:59 sedmac:bin zyzy$ pwd/usr/local/Cellar/gnu-sed/4.5/bin 将/usr/local/Cellar/gnu-sed/4.5/bin加到PATH即可 --with-default-names会阻止homebrew添加一个”g”到新安装的命令前。这样我们就能使用这些命令的通用名字，从而覆盖掉OS X预装的命令。]]></content>
