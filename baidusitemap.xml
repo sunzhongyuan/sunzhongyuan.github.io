@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://sunzhongyuan.net/2018/09/02/sshd/</loc>
+    <lastmod>2018-10-14T02:45:29.490Z</lastmod>
+    <data>
+        <display>
+        <title>linux开启ssh服务</title>
+        <pubTime>2018-09-01T16:29:56.000Z</pubTime>
+        
+        <tag>ssh</tag>
+         
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="http://sunzhongyuan.net/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sunzhongyuan.net/2018/09/01/parallels/</loc>
     <lastmod>2018-10-14T02:39:04.879Z</lastmod>
     <data>
@@ -22,28 +44,6 @@
           
              
               <breadCrumb title="虚拟机" url="http://sunzhongyuan.net/categories/Mac/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sunzhongyuan.net/2018/09/02/sshd/</loc>
-    <lastmod>2018-10-13T17:10:02.225Z</lastmod>
-    <data>
-        <display>
-        <title>linux开启ssh服务</title>
-        <pubTime>2018-09-01T16:29:56.000Z</pubTime>
-        
-        <tag>ssh</tag>
-         
-        <tag>linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="http://sunzhongyuan.net/categories/linux/"/>
           
         </display>
     </data>
