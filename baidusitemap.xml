@@ -4,6 +4,60 @@
 
     
   <url>
+    <loc>http://sunzhongyuan.net/2018/08/26/Homebrew/</loc>
+    <lastmod>2018-10-23T12:11:36.057Z</lastmod>
+    <data>
+        <display>
+        <title>mac安装Homebrew</title>
+        <pubTime>2018-08-26T11:02:54.000Z</pubTime>
+        
+        <tag>mac</tag>
+         
+        <tag>Homebrew</tag>
+         
+        <tag>brew</tag>
+         
+         
+           
+             
+              <breadCrumb title="mac" url="http://sunzhongyuan.net/categories/mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sunzhongyuan.net/2018/09/16/sed/</loc>
+    <lastmod>2018-10-23T12:10:20.620Z</lastmod>
+    <data>
+        <display>
+        <title>sed流编辑器</title>
+        <pubTime>2018-09-16T12:02:01.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>sed</tag>
+         
+        <tag>shell</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="http://sunzhongyuan.net/categories/linux/"/>
+          
+             
+              <breadCrumb title="shell" url="http://sunzhongyuan.net/categories/linux/shell/"/>
+          
+             
+              <breadCrumb title="sed" url="http://sunzhongyuan.net/categories/linux/shell/sed/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sunzhongyuan.net/2018/09/01/parallels/</loc>
     <lastmod>2018-10-14T03:09:47.317Z</lastmod>
     <data>
@@ -36,44 +90,14 @@
         <title>linux开启ssh服务</title>
         <pubTime>2018-09-01T16:29:56.000Z</pubTime>
         
-        <tag>ssh</tag>
-         
         <tag>linux</tag>
+         
+        <tag>ssh</tag>
          
          
            
              
               <breadCrumb title="linux" url="http://sunzhongyuan.net/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sunzhongyuan.net/2018/08/26/Homebrew/</loc>
-    <lastmod>2018-09-20T14:17:49.015Z</lastmod>
-    <data>
-        <display>
-        <title>mac安装Homebrew</title>
-        <pubTime>2018-08-26T11:02:54.000Z</pubTime>
-        
-        <tag>Homebrew</tag>
-         
-        <tag>mac</tag>
-         
-        <tag>brew</tag>
-         
-         
-           
-             
-              <breadCrumb title="shell" url="http://sunzhongyuan.net/categories/shell/"/>
-          
-             
-              <breadCrumb title="mac" url="http://sunzhongyuan.net/categories/shell/mac/"/>
-          
-             
-              <breadCrumb title="brew" url="http://sunzhongyuan.net/categories/shell/mac/brew/"/>
           
         </display>
     </data>

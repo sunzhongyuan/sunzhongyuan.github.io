@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-10-14T02:45:29.490Z</updated>
+  <updated>2018-10-23T12:10:20.620Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sed流编辑器</title>
+    <link href="http://sunzhongyuan.net/2018/09/16/sed/"/>
+    <id>http://sunzhongyuan.net/2018/09/16/sed/</id>
+    <published>2018-09-16T12:02:01.000Z</published>
+    <updated>2018-10-23T12:10:20.620Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="linux" scheme="http://sunzhongyuan.net/categories/linux/"/>
+    
+      <category term="shell" scheme="http://sunzhongyuan.net/categories/linux/shell/"/>
+    
+      <category term="sed" scheme="http://sunzhongyuan.net/categories/linux/shell/sed/"/>
+    
+    
+      <category term="linux" scheme="http://sunzhongyuan.net/tags/linux/"/>
+    
+      <category term="sed" scheme="http://sunzhongyuan.net/tags/sed/"/>
+    
+      <category term="shell" scheme="http://sunzhongyuan.net/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>linux开启ssh服务</title>
@@ -34,9 +60,9 @@
       <category term="linux" scheme="http://sunzhongyuan.net/categories/linux/"/>
     
     
-      <category term="ssh" scheme="http://sunzhongyuan.net/tags/ssh/"/>
-    
       <category term="linux" scheme="http://sunzhongyuan.net/tags/linux/"/>
+    
+      <category term="ssh" scheme="http://sunzhongyuan.net/tags/ssh/"/>
     
   </entry>
   
@@ -70,7 +96,7 @@
     <link href="http://sunzhongyuan.net/2018/08/26/Homebrew/"/>
     <id>http://sunzhongyuan.net/2018/08/26/Homebrew/</id>
     <published>2018-08-26T11:02:54.000Z</published>
-    <updated>2018-09-20T14:17:49.015Z</updated>
+    <updated>2018-10-23T12:11:36.057Z</updated>
     
     <summary type="html">
     
@@ -87,16 +113,12 @@
     
     </summary>
     
-      <category term="shell" scheme="http://sunzhongyuan.net/categories/shell/"/>
+      <category term="mac" scheme="http://sunzhongyuan.net/categories/mac/"/>
     
-      <category term="mac" scheme="http://sunzhongyuan.net/categories/shell/mac/"/>
-    
-      <category term="brew" scheme="http://sunzhongyuan.net/categories/shell/mac/brew/"/>
-    
-    
-      <category term="Homebrew" scheme="http://sunzhongyuan.net/tags/Homebrew/"/>
     
       <category term="mac" scheme="http://sunzhongyuan.net/tags/mac/"/>
+    
+      <category term="Homebrew" scheme="http://sunzhongyuan.net/tags/Homebrew/"/>
     
       <category term="brew" scheme="http://sunzhongyuan.net/tags/brew/"/>
     
