@@ -4,32 +4,8 @@
 
     
   <url>
-    <loc>http://sunzhongyuan.net/2018/08/26/Homebrew/</loc>
-    <lastmod>2018-10-23T12:11:36.057Z</lastmod>
-    <data>
-        <display>
-        <title>mac安装Homebrew</title>
-        <pubTime>2018-08-26T11:02:54.000Z</pubTime>
-        
-        <tag>Homebrew</tag>
-         
-        <tag>mac</tag>
-         
-        <tag>brew</tag>
-         
-         
-           
-             
-              <breadCrumb title="mac" url="http://sunzhongyuan.net/categories/mac/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://sunzhongyuan.net/2018/09/16/sed/</loc>
-    <lastmod>2018-10-23T12:10:20.620Z</lastmod>
+    <lastmod>2018-10-24T14:38:02.070Z</lastmod>
     <data>
         <display>
         <title>sed流编辑器</title>
@@ -51,6 +27,30 @@
           
              
               <breadCrumb title="sed" url="http://sunzhongyuan.net/categories/linux/shell/sed/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sunzhongyuan.net/2018/08/26/Homebrew/</loc>
+    <lastmod>2018-10-23T12:11:36.057Z</lastmod>
+    <data>
+        <display>
+        <title>mac安装Homebrew</title>
+        <pubTime>2018-08-26T11:02:54.000Z</pubTime>
+        
+        <tag>Homebrew</tag>
+         
+        <tag>mac</tag>
+         
+        <tag>brew</tag>
+         
+         
+           
+             
+              <breadCrumb title="mac" url="http://sunzhongyuan.net/categories/mac/"/>
           
         </display>
     </data>

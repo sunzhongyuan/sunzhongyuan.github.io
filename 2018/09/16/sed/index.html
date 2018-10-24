@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="O ever youthful,O ever weeping.">
+<meta name="description" content="sed流编辑器 与交互式文本编辑器(如vim)不同，交互式文本编辑器用键盘来插入、修改和删除数据；而流编辑器则是通过预先设置的规则来编辑数据流。 sed编辑器将修改后的数据输出到stdout标准输出，不会改变原始数据。  sed命令的格式1sed options script file   # sed 选项 &apos;[地址]命令&apos; 文件 eg.删除test.txt中所有#开头的行1sed -e &apos;/^#">
 <meta name="keywords" content="linux,sed,shell">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sed流编辑器">
 <meta property="og:url" content="http://sunzhongyuan.net/2018/09/16/sed/index.html">
 <meta property="og:site_name" content="中原的养老生活">
-<meta property="og:description" content="O ever youthful,O ever weeping.">
+<meta property="og:description" content="sed流编辑器 与交互式文本编辑器(如vim)不同，交互式文本编辑器用键盘来插入、修改和删除数据；而流编辑器则是通过预先设置的规则来编辑数据流。 sed编辑器将修改后的数据输出到stdout标准输出，不会改变原始数据。  sed命令的格式1sed options script file   # sed 选项 &apos;[地址]命令&apos; 文件 eg.删除test.txt中所有#开头的行1sed -e &apos;/^#">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-23T12:10:20.620Z">
+<meta property="og:updated_time" content="2018-10-24T14:38:02.070Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sed流编辑器">
-<meta name="twitter:description" content="O ever youthful,O ever weeping.">
+<meta name="twitter:description" content="sed流编辑器 与交互式文本编辑器(如vim)不同，交互式文本编辑器用键盘来插入、修改和删除数据；而流编辑器则是通过预先设置的规则来编辑数据流。 sed编辑器将修改后的数据输出到stdout标准输出，不会改变原始数据。  sed命令的格式1sed options script file   # sed 选项 &apos;[地址]命令&apos; 文件 eg.删除test.txt中所有#开头的行1sed -e &apos;/^#">
 
 
 
@@ -436,7 +436,103 @@
       
 
       
-        
+        <h3 id="sed流编辑器"><a href="#sed流编辑器" class="headerlink" title="sed流编辑器"></a>sed流编辑器</h3><ul>
+<li>与交互式文本编辑器(如vim)不同，交互式文本编辑器用键盘来插入、修改和删除数据；<br>而流编辑器则是通过预先设置的规则来编辑数据流。</li>
+<li>sed编辑器将修改后的数据输出到stdout标准输出，不会改变原始数据。</li>
+</ul>
+<h4 id="sed命令的格式"><a href="#sed命令的格式" class="headerlink" title="sed命令的格式"></a>sed命令的格式</h4><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed options <span class="keyword">script</span> <span class="built_in">file</span>   <span class="comment"># sed 选项 '[地址]命令' 文件</span></span><br></pre></td></tr></table></figure>
+<p>eg.删除test.txt中所有#开头的行<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sed</span> -e <span class="string">'/^#/d'</span> test.txt   <span class="comment"># -e可以省略</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>sed会依次执行下列操作：<ol>
+<li>将test.txt作为输入，从中读取一行数据到sed内部的一个模式缓冲区，<br>也可以从命令管道读取<code>cat test.txt|sed -e &#39;/^#/d&#39;</code></li>
+<li>根据设置的地址<code>/^#/</code>匹配读取的这一行个，判断当前行是否需要处理</li>
+<li>如果需要处理则将这一行执行命令<code>d</code></li>
+<li>将模式缓冲区内的这一行输出到stdout标准输入（屏幕），不会改变原始数据</li>
+<li>重复上述步骤再从输入读取一行进行匹配、修改、输出，直到处理完所有行</li>
+</ol>
+</li>
+<li><p>options:</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-n        禁止sed编辑器输出</span><br><span class="line">-e<span class="built_in"> script </span>将script中指定的命令添加到已有的命令中（缺省值）</span><br><span class="line">-f file   将file中指定的命令添加到已有的命令中</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>script:</p>
+<ul>
+<li>script一般建议用单引号<code>&#39;</code>括起来</li>
+<li>script常由地址（行寻址）和命令组成，地址控制了将命令应用到哪些行，缺省为所有行。</li>
+<li><p>行寻址：</p>
+<ul>
+<li>如果想让命令作用在某一行，可以在命令前加上行寻址</li>
+<li><p>行寻址有两种形式：</p>
+<ol>
+<li><p>数字方式的行寻址</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sed '<span class="number">2</span>s/a/<span class="number">111</span>/g' test.txt     # 只替换第二行</span><br><span class="line">sed '<span class="number">2</span>,<span class="number">4</span>s/a/<span class="number">111</span>/g' test.txt   # 替换<span class="number">2</span>，<span class="number">3</span>，<span class="number">4</span>行</span><br><span class="line">sed '<span class="number">2</span>,$s/a/<span class="number">111</span>/g' test.txt   # 替换<span class="number">2</span>到最后一行</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用文本模式过滤器</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/pattern/</span>command  # <span class="regexp">/模式/</span>命令</span><br><span class="line"><span class="regexp">/pattern/</span>,<span class="regexp">/pattern/</span>command  # <span class="regexp">/模式1/</span>,<span class="regexp">/模式2/</span>命令</span><br></pre></td></tr></table></figure>
+<p>eg.</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># 只替换#开头的行</span></span><br><span class="line">sed <span class="string">'/^#/s/a/111/g'</span> test.txt  </span><br><span class="line"></span><br><span class="line"><span class="meta"># 替换所有模式1到模式2区间的行，前后包含，可能有多个区间，</span></span><br><span class="line"><span class="meta"># 模式1代表开始，模式2代表结束，</span></span><br><span class="line"><span class="meta"># 如果没有代表结束的模式2则一直替换到最后一行</span></span><br><span class="line">sed <span class="string">'/a/,/b/s/a/111/g'</span> test.txt</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>sed支持多个命令组合使用：</p>
+<ul>
+<li><p>单个命令</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sed</span> <span class="string">'s/a/111/g'</span> test.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>多个命令</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sed</span> <span class="string">'s/a/111/g; s/b/222/g'</span> test.txt   <span class="comment"># 注意格式，分号前不能有空格</span></span><br><span class="line">sed -e <span class="string">'s/a/111/g'</span> -e <span class="string">'s/b/222/g'</span> test.txt  <span class="comment"># 用两个-e实现多命令</span></span><br><span class="line">sed -f aa.sed test.txt  <span class="comment"># 将多个命令写在一个文件里，一行一个命令，用-f引用这个文件</span></span><br><span class="line">sed <span class="string">'     # 注意格式，输入第一个单引号后可以回车，一行一个命令</span></span><br><span class="line"><span class="string">&gt; s/a/111/g</span></span><br><span class="line"><span class="string">&gt; s/b/222/g</span></span><br><span class="line"><span class="string">&gt; '</span> test.txt   <span class="comment"># 输入另一个单引号，表示命令行输入完毕，在这一行要结束整个sed命令</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>一个地址执行多个命令：</p>
+<ul>
+<li><p>在多个命令组合的基础上加上行寻址，然后把命令用{}括起来即可</p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">address&#123;</span><br><span class="line">  comma<span class="symbol">nd1</span></span><br><span class="line">  comma<span class="symbol">nd2</span></span><br><span class="line">  comma<span class="symbol">nd3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>eg.  </p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">zyzy@zyzy:~<span class="regexp">/Templates$ cat test.txt</span></span><br><span class="line"><span class="regexp">line 1</span></span><br><span class="line"><span class="regexp">line 2#</span></span><br><span class="line"><span class="regexp">#line 3</span></span><br><span class="line"><span class="regexp">line #4</span></span><br><span class="line"><span class="regexp">#ine 5</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">line 6</span></span><br><span class="line"><span class="regexp">zyzy@zyzy:~/</span>Templates$ sed <span class="string">'2&#123;</span></span><br><span class="line"><span class="string">&gt; s/line/abcd/g</span></span><br><span class="line"><span class="string">&gt; s/#/!/g</span></span><br><span class="line"><span class="string">&gt; &#125;'</span> test.txt</span><br><span class="line">line <span class="number">1</span></span><br><span class="line">abcd <span class="number">2</span>!</span><br><span class="line"><span class="comment">#line 3</span></span><br><span class="line">line <span class="comment">#4</span></span><br><span class="line"><span class="comment">#ine 5</span></span><br><span class="line"></span><br><span class="line">line <span class="number">6</span></span><br><span class="line">zyzy@zyzy:~<span class="regexp">/Templates$ sed '/</span>^<span class="comment">#/&#123;</span></span><br><span class="line">&gt; <span class="regexp">s/line/abcd/g</span></span><br><span class="line">&gt; <span class="regexp">s/#/!/g</span></span><br><span class="line">&gt; &#125;<span class="string">' test.txt</span></span><br><span class="line"><span class="string">line 1</span></span><br><span class="line"><span class="string">line 2#</span></span><br><span class="line"><span class="string">!abcd 3</span></span><br><span class="line"><span class="string">line #4</span></span><br><span class="line"><span class="string">!ine 5</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">line 6</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="sed常用的命令"><a href="#sed常用的命令" class="headerlink" title="sed常用的命令"></a>sed常用的命令</h4><ul>
+<li><p>替换s</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s<span class="regexp">/pattern/</span>replacement<span class="regexp">/flags   # s/</span>模式<span class="regexp">/代替者/</span>替换标记</span><br></pre></td></tr></table></figure>
+<p>模式可以理解为正则表达式，在当前行匹配字符串，将匹配的字符串用代替者替换<br>替换标记有四种：</p>
+<ul>
+<li>数字：替换标记缺省值为1，表示替换每一行中的第一处模式匹配的地方，指定几，就替换每行中第几处模式匹配的地方</li>
+<li>g：替换每行中所有模式匹配的地方，就是替换所有匹配上的字符串</li>
+<li>p：这个标记通常和sed的-n选项结合使用，-n会禁止sed编辑器输出，但p会输出修改过的行，结合两个就是只输出被替换命令修改过的行；如果没有-n选项，被修改过的行会打印两遍</li>
+<li>w file：功能与p类似，p是打印，w是写到文件里，如果文件存在则覆盖写入   </li>
+</ul>
+<p>字符串分隔符<code>/</code>可以用其他字符替代：</p>
+<ul>
+<li><p>一个模式如果是路径，路径中的<code>/</code>需要用<code>\</code>转码<br>eg.将/etc/passwd文件中的<code>/bin/bash</code>替换为<code>/bin/csh</code></p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed 's/\<span class="string">/bin</span>\<span class="string">/bash/</span>\<span class="string">/bin</span>\<span class="string">/csh/g</span>' <span class="string">/etc/passwd</span></span><br></pre></td></tr></table></figure>
+<p>这样转码就麻烦，不便于书写和阅读，所以sed编辑器允许用其他字符代替字符串分隔符<code>/</code></p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed 's!<span class="string">/bin/bash</span>!<span class="string">/bin/csh</span>!g' <span class="string">/etc/passwd</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>删除行d</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sed</span> <span class="string">'d'</span> test.txt  <span class="comment"># 删除所有行</span></span><br><span class="line">sed <span class="string">'2d'</span> test.txt   <span class="comment"># 删除第二行</span></span><br><span class="line">sed <span class="string">'2,$'</span> test.txt  <span class="comment"># 删除第二行到最后一行</span></span><br><span class="line">sed <span class="string">'/a/d'</span> test.txt   <span class="comment"># 删除包含a的行</span></span><br><span class="line">sed <span class="string">'/a/,/b/d'</span> test.txt <span class="comment"># 删除包含a的行到包含b的行这个区间的所有行，没有包含b的行则会删除到最后一行，谨慎使用</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插入a、i</p>
+<ul>
+<li>sed的插入只能以行为单位插入</li>
+<li>i：指定行前插入</li>
+<li>a：指定行后插入<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sed <span class="comment">'[address]command\</span></span><br><span class="line"><span class="keyword">new</span> line1\</span><br><span class="line"><span class="keyword">new</span> line2<span class="comment">'</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>eg.</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">zyzy<span class="variable">@zyzy</span><span class="symbol">:~/Templates</span><span class="variable">$ </span>echo <span class="string">"line 1"</span> | sed <span class="string">'i\</span></span><br><span class="line"><span class="string">&gt; line 2\</span></span><br><span class="line"><span class="string">&gt; line 3'</span></span><br><span class="line">line <span class="number">2</span></span><br><span class="line">line <span class="number">3</span></span><br><span class="line">line <span class="number">1</span></span><br><span class="line">zyzy<span class="variable">@zyzy</span><span class="symbol">:~/Templates</span><span class="variable">$ </span>cat test.txt</span><br><span class="line">line <span class="number">1</span></span><br><span class="line">line <span class="number">2</span><span class="comment">#</span></span><br><span class="line"><span class="comment">#line 3</span></span><br><span class="line">line <span class="comment">#4</span></span><br><span class="line"><span class="comment">#ine 5</span></span><br><span class="line"></span><br><span class="line">line <span class="number">6</span></span><br><span class="line">zyzy<span class="variable">@zyzy</span><span class="symbol">:~/Templates</span><span class="variable">$ </span>sed <span class="string">'1i\</span></span><br><span class="line"><span class="string">&gt; inserted line a\</span></span><br><span class="line"><span class="string">&gt; inserted line b'</span> test.txt</span><br><span class="line">inserted line a</span><br><span class="line">inserted line b</span><br><span class="line">line <span class="number">1</span></span><br><span class="line">line <span class="number">2</span><span class="comment">#</span></span><br><span class="line"><span class="comment">#line 3</span></span><br><span class="line">line <span class="comment">#4</span></span><br><span class="line"><span class="comment">#ine 5</span></span><br><span class="line"></span><br><span class="line">line <span class="number">6</span></span><br><span class="line">zyzy<span class="variable">@zyzy</span><span class="symbol">:~/Templates</span><span class="variable">$ </span>sed <span class="string">'$a\</span></span><br><span class="line"><span class="string">&gt; inserted line a\</span></span><br><span class="line"><span class="string">&gt; inserted line b</span></span><br><span class="line"><span class="string">&gt; '</span> test.txt</span><br><span class="line">line <span class="number">1</span></span><br><span class="line">line <span class="number">2</span><span class="comment">#</span></span><br><span class="line"><span class="comment">#line 3</span></span><br><span class="line">line <span class="comment">#4</span></span><br><span class="line"><span class="comment">#ine 5</span></span><br><span class="line"></span><br><span class="line">line <span class="number">6</span></span><br><span class="line">inserted line a</span><br><span class="line">inserted line b</span><br><span class="line">zyzy<span class="variable">@zyzy</span><span class="symbol">:~/Templates</span><span class="variable">$ </span>sed <span class="string">'a\!!!!!!!'</span> test.txt</span><br><span class="line">line <span class="number">1</span></span><br><span class="line">!!!!!!!</span><br><span class="line">line <span class="number">2</span><span class="comment">#</span></span><br><span class="line">!!!!!!!</span><br><span class="line"><span class="comment">#line 3</span></span><br><span class="line">!!!!!!!</span><br><span class="line">line <span class="comment">#4</span></span><br><span class="line">!!!!!!!</span><br><span class="line"><span class="comment">#ine 5</span></span><br><span class="line">!!!!!!!</span><br><span class="line"></span><br><span class="line">!!!!!!!</span><br><span class="line">line <span class="number">6</span></span><br><span class="line">!!!!!!!</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改c</p>
+</li>
+</ul>
+
       
     </div>
     
@@ -551,8 +647,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -647,6 +752,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#sed流编辑器"><span class="nav-text">sed流编辑器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#sed命令的格式"><span class="nav-text">sed命令的格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sed常用的命令"><span class="nav-text">sed常用的命令</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
