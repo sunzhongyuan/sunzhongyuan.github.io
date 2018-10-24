@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>http://sunzhongyuan.net/2018/09/01/parallels/</loc>
+    <lastmod>2018-10-24T15:32:53.610Z</lastmod>
+    <data>
+        <display>
+        <title>mac安装linux虚拟机</title>
+        <pubTime>2018-09-01T02:29:34.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+        <tag>虚拟机</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mac" url="http://sunzhongyuan.net/categories/Mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://sunzhongyuan.net/2018/08/26/Homebrew/</loc>
+    <lastmod>2018-10-24T15:32:41.884Z</lastmod>
+    <data>
+        <display>
+        <title>mac安装Homebrew</title>
+        <pubTime>2018-08-26T11:02:54.000Z</pubTime>
+        
+        <tag>Homebrew</tag>
+         
+        <tag>Mac</tag>
+         
+        <tag>brew</tag>
+         
+         
+           
+             
+              <breadCrumb title="Mac" url="http://sunzhongyuan.net/categories/Mac/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sunzhongyuan.net/2018/09/16/sed/</loc>
     <lastmod>2018-10-24T15:26:03.977Z</lastmod>
     <data>
@@ -27,55 +73,6 @@
           
              
               <breadCrumb title="sed" url="http://sunzhongyuan.net/categories/linux/shell/sed/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sunzhongyuan.net/2018/08/26/Homebrew/</loc>
-    <lastmod>2018-10-23T12:11:36.057Z</lastmod>
-    <data>
-        <display>
-        <title>mac安装Homebrew</title>
-        <pubTime>2018-08-26T11:02:54.000Z</pubTime>
-        
-        <tag>Homebrew</tag>
-         
-        <tag>mac</tag>
-         
-        <tag>brew</tag>
-         
-         
-           
-             
-              <breadCrumb title="mac" url="http://sunzhongyuan.net/categories/mac/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://sunzhongyuan.net/2018/09/01/parallels/</loc>
-    <lastmod>2018-10-14T03:09:47.317Z</lastmod>
-    <data>
-        <display>
-        <title>mac安装linux虚拟机</title>
-        <pubTime>2018-09-01T02:29:34.000Z</pubTime>
-        
-        <tag>mac</tag>
-         
-        <tag>虚拟机</tag>
-         
-         
-           
-             
-              <breadCrumb title="mac" url="http://sunzhongyuan.net/categories/mac/"/>
-          
-             
-              <breadCrumb title="虚拟机" url="http://sunzhongyuan.net/categories/mac/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
           
         </display>
     </data>
