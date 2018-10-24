@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-10-24T15:26:03.977Z</updated>
+  <updated>2018-10-24T15:44:47.284Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -21,17 +21,18 @@
     <link href="http://sunzhongyuan.net/2018/09/16/sed/"/>
     <id>http://sunzhongyuan.net/2018/09/16/sed/</id>
     <published>2018-09-16T12:02:01.000Z</published>
-    <updated>2018-10-24T15:26:03.977Z</updated>
+    <updated>2018-10-24T15:44:47.284Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;sed流编辑器&quot;&gt;&lt;a href=&quot;#sed流编辑器&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h3 id=&quot;sed流编辑器&quot;&gt;&lt;a href=&quot;#sed流编辑器&quot; class=&quot;headerlink&quot; title=&quot;sed流编辑器&quot;&gt;&lt;/a&gt;sed流编辑器&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;与交互式文本编辑器(如vim)不同，交互式文本编辑器用键盘来插入、修改和删除数据；&lt;br&gt;而流编辑器则是通过预先设置的规则来编辑数据流。&lt;/li&gt;
+&lt;li&gt;sed编辑器将修改后的数据输出到stdout标准输出，不会改变原始数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;sed命令的格式&quot;&gt;&lt;a href=&quot;#sed命令的格式&quot; class=&quot;headerlink&quot; title=&quot;sed命令的格式&quot;&gt;&lt;/a&gt;sed命令的格式&lt;/h4&gt;&lt;figure class=&quot;highlight applescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed options &lt;span class=&quot;keyword&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;file&lt;/span&gt;   &lt;span class=&quot;comment&quot;&gt;# sed 选项 &#39;[地址]命令&#39; 文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;eg.删除test.txt中所有#开头的行&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;sed&lt;/span&gt; -e &lt;span class=&quot;string&quot;&gt;&#39;/^#/d&#39;&lt;/span&gt; test.txt   &lt;span class=&quot;comment&quot;&gt;# -e可以省略&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sed会依次执行下列操作：&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
