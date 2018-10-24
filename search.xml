@@ -7,7 +7,6 @@
       <categories>
         <category>linux</category>
         <category>shell</category>
-        <category>sed</category>
       </categories>
       <tags>
         <tag>linux</tag>
@@ -23,8 +22,8 @@
         <category>linux</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>ssh</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>

@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://sunzhongyuan.net/2018/09/16/sed/</loc>
-    <lastmod>2018-10-24T15:44:47.284Z</lastmod>
+    <lastmod>2018-10-24T15:47:38.053Z</lastmod>
     <data>
         <display>
         <title>sed流编辑器</title>
@@ -24,9 +24,6 @@
           
              
               <breadCrumb title="shell" url="http://sunzhongyuan.net/categories/linux/shell/"/>
-          
-             
-              <breadCrumb title="sed" url="http://sunzhongyuan.net/categories/linux/shell/sed/"/>
           
         </display>
     </data>
@@ -87,9 +84,9 @@
         <title>linux开启ssh服务</title>
         <pubTime>2018-09-01T16:29:56.000Z</pubTime>
         
-        <tag>linux</tag>
-         
         <tag>ssh</tag>
+         
+        <tag>linux</tag>
          
          
            
