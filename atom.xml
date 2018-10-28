@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-10-25T12:28:24.291Z</updated>
+  <updated>2018-10-28T15:21:38.432Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -17,16 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>regex</title>
-    <link href="http://sunzhongyuan.net/2018/10/25/regex/"/>
-    <id>http://sunzhongyuan.net/2018/10/25/regex/</id>
-    <published>2018-10-25T12:28:24.000Z</published>
-    <updated>2018-10-25T12:28:24.291Z</updated>
+    <title>正则表达式</title>
+    <link href="http://sunzhongyuan.net/2018/09/23/regex/"/>
+    <id>http://sunzhongyuan.net/2018/09/23/regex/</id>
+    <published>2018-09-23T12:28:24.000Z</published>
+    <updated>2018-10-28T15:21:38.432Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;h3 id=&quot;正则表达式&quot;&gt;&lt;a href=&quot;#正则表达式&quot; class=&quot;headerlink&quot; title=&quot;正则表达式&quot;&gt;&lt;/a&gt;正则表达式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;可以理解为一个模板，用这个模板匹配过滤数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4
+        
+      
+    
     </summary>
     
+      <category term="linux" scheme="http://sunzhongyuan.net/categories/linux/"/>
+    
+    
+      <category term="regex" scheme="http://sunzhongyuan.net/tags/regex/"/>
     
   </entry>
   
@@ -35,7 +50,7 @@
     <link href="http://sunzhongyuan.net/2018/09/16/sed/"/>
     <id>http://sunzhongyuan.net/2018/09/16/sed/</id>
     <published>2018-09-16T12:02:01.000Z</published>
-    <updated>2018-10-24T15:47:38.053Z</updated>
+    <updated>2018-10-28T12:45:50.816Z</updated>
     
     <summary type="html">
     
@@ -44,9 +59,6 @@
 &lt;li&gt;sed编辑器将修改后的数据输出到stdout标准输出，不会改变原始数据。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&quot;sed命令的格式&quot;&gt;&lt;a href=&quot;#sed命令的格式&quot; class=&quot;headerlink&quot; title=&quot;sed命令的格式&quot;&gt;&lt;/a&gt;sed命令的格式&lt;/h4&gt;&lt;figure class=&quot;highlight applescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed options &lt;span class=&quot;keyword&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;file&lt;/span&gt;   &lt;span class=&quot;comment&quot;&gt;# sed 选项 &#39;[地址]命令&#39; 文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;eg.删除test.txt中所有#开头的行&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;sed&lt;/span&gt; -e &lt;span class=&quot;string&quot;&gt;&#39;/^#/d&#39;&lt;/span&gt; test.txt   &lt;span class=&quot;comment&quot;&gt;# -e可以省略&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;sed会依次执行下列操作：&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     

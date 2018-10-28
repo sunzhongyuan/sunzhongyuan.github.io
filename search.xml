@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[regex]]></title>
-    <url>%2F2018%2F10%2F25%2Fregex%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[正则表达式]]></title>
+    <url>%2F2018%2F09%2F23%2Fregex%2F</url>
+    <content type="text"><![CDATA[正则表达式 可以理解为一个模板，用这个模板匹配过滤数据 正则表达式引擎 一套负责解释正则表达式模式并使用这些模板进行文本匹配的底层软件 在linux系统中流行的两种正则表达式引擎 POSIX基础正则表达式（basic regular expression，BRE）引擎 POSIX扩展正则表达式（extended regular expression，ERE）引擎 大多数linux工具都至少符合BRE引擎规范，但是有些工具（比如sed）只符合了BRE的子集，这是出于速度的考虑。 BRE模式 纯文本 特殊字符（. * [] ^ $ {} \ + ? | ()） \：转义字符，用来转义这些特殊字符，另外sed中的/也需要转义echo &quot;3/2&quot;|sed -n &#39;/\//p&#39; ^：行首，用来定义文本行的行首开始的模式，如果放到模式开头之外的其他位置，那么它就是一个普通字符了 $：行尾，用来定义文本行的行尾结束的模式，如果放到模式结尾之外的其他位置，那么它就是一个普通字符了 ^$：空行 .：除换行符之外的任意单个字符 []：字符组，可以作为一个特殊的通配符，与.类似，.通配任意单个字符，[12ab]表示通配1、2、a、b [^]：排除型字符组，[^12ab]表示通配处理1、2、a、b的其他任意字符 [-]：区间型字符组，[0-9]表示通配数字，[a-ce-h]表示通配a到c和e到h的两个区间 [[:alpha:]]：匹配任意字母字符a~z、A~Z [[:alnum:]]：匹配任意字母数字字符0~9、a~z、A~Z [[:blank:]]：匹配空格或制表符 [[:digit:]]：匹配任意数字字符0~9 [[:lower:]]：匹配任意小写字母字符a~z [[:upper:]]：匹配任意大写字母字符A~Z [[:print:]]：匹配任意可打印字符 [[:punct:]]：匹配任意标点符号 [[:space:]]：匹配任意空白字符：空格、制表符、NL、FF、VT、CR *：*在正则表达式以为多被定义为通配任意个任意字符，而在正则表达式里则不同，在正则表达式里*要放置在一个字符后面，表明该字符可以出现0次或多次 1echo "abc"|sed -n '/d*/p' #打印abc，因为d可以出现0次 如果限制了位置区间，这个位置区间内不能出现该字符以外其他字符，a[123]*ba和b之间只能出现1、2、3多次或0次，不可以出现字符组以为的字符 12echo "eabcf" | sed -n '/ea*f/p' # 不打印，e和f之间只能出现a多次或0次，这里出现了其他字符b和c，所以不打印echo "eabcf" | sed -n '/e[abcd]*f/p' # 打印eacbdf *前放置的字符有下面几种情况： 没有字符或部分特殊字符 如果*前面没有字符或者前边是部分特殊字符，那么它就是一个普通字符了1]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>regex</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[sed流编辑器]]></title>
