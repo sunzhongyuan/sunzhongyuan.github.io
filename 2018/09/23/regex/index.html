@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="编码的手艺人">
 <meta property="og:description" content="正则表达式 可以理解为一个模板，用这个模板匹配过滤数据  正则表达式引擎 一套负责解释正则表达式模式并使用这些模板进行文本匹配的底层软件 在linux系统中流行的两种正则表达式引擎 POSIX基础正则表达式（basic regular expression，BRE）引擎 POSIX扩展正则表达式（extended regular expression，ERE）引擎   大多数linux工具都至少符">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-04T14:28:25.959Z">
+<meta property="og:updated_time" content="2018-11-04T14:30:30.913Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式">
 <meta name="twitter:description" content="正则表达式 可以理解为一个模板，用这个模板匹配过滤数据  正则表达式引擎 一套负责解释正则表达式模式并使用这些模板进行文本匹配的底层软件 在linux系统中流行的两种正则表达式引擎 POSIX基础正则表达式（basic regular expression，BRE）引擎 POSIX扩展正则表达式（extended regular expression，ERE）引擎   大多数linux工具都至少符">
@@ -438,7 +438,8 @@
 </ul>
 </li>
 <li><code>.</code>：除换行符之外的任意单个字符</li>
-<li><code>[]</code>：字符组，可以作为一个特殊的通配符，与<code>.</code>类似，<code>.</code>通配任意单个字符，<code>[12ab]</code>表示通配1、2、a、b<ul>
+<li><p><code>[]</code>：字符组，可以作为一个特殊的通配符，与<code>.</code>类似，<code>.</code>通配任意单个字符，<code>[12ab]</code>表示通配1、2、a、b</p>
+<ul>
 <li><code>[^]</code>：排除型字符组，<code>[^12ab]</code>表示通配处理1、2、a、b的其他任意字符</li>
 <li><code>[-]</code>：区间型字符组，<code>[0-9]</code>表示通配数字，<code>[a-ce-h]</code>表示通配a到c和e到h的两个区间</li>
 <li><code>[[:alpha:]]</code>：匹配任意字母字符a~z、A~Z</li>
