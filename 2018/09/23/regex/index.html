@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="编码的手艺人">
 <meta property="og:description" content="正则表达式 可以理解为一个模板，用这个模板匹配过滤数据  正则表达式引擎 一套负责解释正则表达式模式并使用这些模板进行文本匹配的底层软件 在linux系统中流行的两种正则表达式引擎 POSIX基础正则表达式（basic regular expression，BRE）引擎 POSIX扩展正则表达式（extended regular expression，ERE）引擎   大多数linux工具都至少符">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-04T14:25:40.106Z">
+<meta property="og:updated_time" content="2018-11-04T14:28:25.959Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式">
 <meta name="twitter:description" content="正则表达式 可以理解为一个模板，用这个模板匹配过滤数据  正则表达式引擎 一套负责解释正则表达式模式并使用这些模板进行文本匹配的底层软件 在linux系统中流行的两种正则表达式引擎 POSIX基础正则表达式（basic regular expression，BRE）引擎 POSIX扩展正则表达式（extended regular expression，ERE）引擎   大多数linux工具都至少符">
@@ -452,12 +452,14 @@
 <li><code>[[:space:]]</code>：匹配任意空白字符：空格、制表符、NL、FF、VT、CR</li>
 </ul>
 </li>
-<li><code>*</code>：<code>*</code>在正则表达式以为多被定义为通配任意个任意字符，而在正则表达式里则不同，在正则表达式里<code>*</code>要放置在一个字符后面，表明该字符可以出现0次或多次   <figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> <span class="string">"abc"</span>|sed -n '<span class="string">/d</span>*<span class="string">/p</span>'   <span class="comment">#打印abc，因为d可以出现0次</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>如果限制了位置区间，这个位置区间内不能出现该字符以外其他字符，<code>a[123]*b</code>a和b之间只能出现1、2、3多次或0次，不可以出现字符组以外的字符</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"eabcf"</span> | sed -n <span class="string">'/ea*f/p'</span>   <span class="comment"># 不打印，e和f之间只能出现a多次或0次，这里出现了其他字符b和c，所以不打印</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"eabcf"</span> | sed -n <span class="string">'/e[abcd]*f/p'</span>   <span class="comment"># 打印eacbdf</span></span><br></pre></td></tr></table></figure>
+<li><p><code>*</code></p>
 <ul>
+<li><p><code>*</code>在正则表达式以为多被定义为通配任意个任意字符，而在正则表达式里则不同，在正则表达式里<code>*</code>要放置在一个字符后面，表明该字符可以出现0次或多次   </p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> <span class="string">"abc"</span>|sed -n '<span class="string">/d</span>*<span class="string">/p</span>'   <span class="comment">#打印abc，因为d可以出现0次</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果限制了位置区间，这个位置区间内不能出现该字符以外其他字符，<code>a[123]*b</code>a和b之间只能出现1、2、3多次或0次，不可以出现字符组以外的字符</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"eabcf"</span> | sed -n <span class="string">'/ea*f/p'</span>   <span class="comment"># 不打印，e和f之间只能出现a多次或0次，这里出现了其他字符b和c，所以不打印</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"eabcf"</span> | sed -n <span class="string">'/e[abcd]*f/p'</span>   <span class="comment"># 打印eacbdf</span></span><br></pre></td></tr></table></figure>
+</li>
 <li><p><code>*</code>前放置的字符有下面几种情况：</p>
 <ul>
 <li><p>没有字符或部分特殊字符<br>如果<code>*</code>前面没有字符或者前边是部分特殊字符，那么它就是一个普通字符了</p>
@@ -471,6 +473,8 @@
 </li>
 <li><p>字符组[]<br><code>[]*</code>表示字符组内的任意字符出现0次或多次</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"abdc"</span>|sed -n <span class="string">'/[2e42]*/p'</span>   <span class="comment"># 打印abdc</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"abcdef"</span>|sed -n <span class="string">'/a[bcd]*f/p'</span>  <span class="comment"># 不打印</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 </li>
 </ul>
 </li>
