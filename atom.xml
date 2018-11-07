@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-11-07T14:50:10.521Z</updated>
+  <updated>2018-11-07T14:57:17.141Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://sunzhongyuan.net/2018/11/07/hadoop1/"/>
     <id>http://sunzhongyuan.net/2018/11/07/hadoop1/</id>
     <published>2018-11-07T14:44:00.000Z</published>
-    <updated>2018-11-07T14:50:10.521Z</updated>
+    <updated>2018-11-07T14:57:17.141Z</updated>
     
     <summary type="html">
     
@@ -177,9 +177,9 @@
       <category term="Mac" scheme="http://sunzhongyuan.net/categories/Mac/"/>
     
     
-      <category term="Homebrew" scheme="http://sunzhongyuan.net/tags/Homebrew/"/>
-    
       <category term="macOS" scheme="http://sunzhongyuan.net/tags/macOS/"/>
+    
+      <category term="Homebrew" scheme="http://sunzhongyuan.net/tags/Homebrew/"/>
     
       <category term="brew" scheme="http://sunzhongyuan.net/tags/brew/"/>
     
