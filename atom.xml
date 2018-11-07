@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-11-04T14:30:30.913Z</updated>
+  <updated>2018-11-07T14:50:10.521Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hadoop学习笔记1</title>
+    <link href="http://sunzhongyuan.net/2018/11/07/hadoop1/"/>
+    <id>http://sunzhongyuan.net/2018/11/07/hadoop1/</id>
+    <published>2018-11-07T14:44:00.000Z</published>
+    <updated>2018-11-07T14:50:10.521Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;大数据的四个特征-4V&quot;&gt;&lt;a href=&quot;#大数据的四个特征-4V&quot; class=&quot;headerlink&quot; title=&quot;大数据的四个特征 4V&quot;&gt;&lt;/a&gt;大数据的四个特征 4V&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Volume   
+        
+      
+    
+    </summary>
+    
+      <category term="大数据" scheme="http://sunzhongyuan.net/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+      <category term="Hadoop" scheme="http://sunzhongyuan.net/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/"/>
+    
+    
+      <category term="Hadoop" scheme="http://sunzhongyuan.net/tags/Hadoop/"/>
+    
+  </entry>
   
   <entry>
     <title>正则表达式</title>
@@ -94,9 +123,9 @@
       <category term="linux" scheme="http://sunzhongyuan.net/categories/linux/"/>
     
     
-      <category term="ssh" scheme="http://sunzhongyuan.net/tags/ssh/"/>
-    
       <category term="linux" scheme="http://sunzhongyuan.net/tags/linux/"/>
+    
+      <category term="ssh" scheme="http://sunzhongyuan.net/tags/ssh/"/>
     
   </entry>
   

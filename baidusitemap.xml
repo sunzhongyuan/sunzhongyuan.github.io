@@ -4,6 +4,29 @@
 
     
   <url>
+    <loc>http://sunzhongyuan.net/2018/11/07/hadoop1/</loc>
+    <lastmod>2018-11-07T14:50:10.521Z</lastmod>
+    <data>
+        <display>
+        <title>Hadoop学习笔记1</title>
+        <pubTime>2018-11-07T14:44:00.000Z</pubTime>
+        
+        <tag>Hadoop</tag>
+         
+         
+           
+             
+              <breadCrumb title="大数据" url="http://sunzhongyuan.net/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+             
+              <breadCrumb title="Hadoop" url="http://sunzhongyuan.net/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/Hadoop/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sunzhongyuan.net/2018/09/23/regex/</loc>
     <lastmod>2018-11-04T14:30:30.913Z</lastmod>
     <data>
@@ -104,9 +127,9 @@
         <title>linux开启ssh服务</title>
         <pubTime>2018-09-01T16:29:56.000Z</pubTime>
         
-        <tag>ssh</tag>
-         
         <tag>linux</tag>
+         
+        <tag>ssh</tag>
          
          
            
