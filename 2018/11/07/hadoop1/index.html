@@ -86,20 +86,21 @@
 
 
 
-<meta name="description" content="大数据的四个特征 4V Volume    海量的数据规模（TB、PB、EB） variety   多样的数据类型（结构化、非结构化、半结构化、其他） velocity  快速的数据流转（流、实时、近实时、批量） value     发现数据价值  大数据要解决的问题 从海量的多样的数据中发现数据价值  大数据涉及到的技术 数据采集 数据存储 数据处理、分析、挖掘 可视化  大数据在技术架构上带来">
+<meta name="description" content="大数据的四个特征 Volume    海量的数据规模（TB、PB、EB） variety   多样的数据类型（结构化、非结构化、半结构化、其他） velocity  快速的数据流转（流、实时、近实时、批量） value     发现数据价值  大数据要解决的问题 从海量的多样的数据中发现数据价值  大数据涉及到的技术 数据采集 数据存储 数据处理、分析、挖掘 可视化">
 <meta name="keywords" content="Hadoop">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hadoop学习笔记1">
 <meta property="og:url" content="http://sunzhongyuan.net/2018/11/07/hadoop1/index.html">
 <meta property="og:site_name" content="编码的手艺人">
-<meta property="og:description" content="大数据的四个特征 4V Volume    海量的数据规模（TB、PB、EB） variety   多样的数据类型（结构化、非结构化、半结构化、其他） velocity  快速的数据流转（流、实时、近实时、批量） value     发现数据价值  大数据要解决的问题 从海量的多样的数据中发现数据价值  大数据涉及到的技术 数据采集 数据存储 数据处理、分析、挖掘 可视化  大数据在技术架构上带来">
+<meta property="og:description" content="大数据的四个特征 Volume    海量的数据规模（TB、PB、EB） variety   多样的数据类型（结构化、非结构化、半结构化、其他） velocity  快速的数据流转（流、实时、近实时、批量） value     发现数据价值  大数据要解决的问题 从海量的多样的数据中发现数据价值  大数据涉及到的技术 数据采集 数据存储 数据处理、分析、挖掘 可视化">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://sunzhongyuan.net/2018/11/07/hadoop1/Hadoop1-1.png">
 <meta property="og:image" content="http://sunzhongyuan.net/2018/11/07/hadoop1/Hadoop1-2.png">
-<meta property="og:updated_time" content="2018-11-07T14:57:17.141Z">
+<meta property="og:image" content="http://sunzhongyuan.net/2018/11/07/hadoop1/Hadoop1-3.png">
+<meta property="og:updated_time" content="2018-11-20T12:44:36.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hadoop学习笔记1">
-<meta name="twitter:description" content="大数据的四个特征 4V Volume    海量的数据规模（TB、PB、EB） variety   多样的数据类型（结构化、非结构化、半结构化、其他） velocity  快速的数据流转（流、实时、近实时、批量） value     发现数据价值  大数据要解决的问题 从海量的多样的数据中发现数据价值  大数据涉及到的技术 数据采集 数据存储 数据处理、分析、挖掘 可视化  大数据在技术架构上带来">
+<meta name="twitter:description" content="大数据的四个特征 Volume    海量的数据规模（TB、PB、EB） variety   多样的数据类型（结构化、非结构化、半结构化、其他） velocity  快速的数据流转（流、实时、近实时、批量） value     发现数据价值  大数据要解决的问题 从海量的多样的数据中发现数据价值  大数据涉及到的技术 数据采集 数据存储 数据处理、分析、挖掘 可视化">
 <meta name="twitter:image" content="http://sunzhongyuan.net/2018/11/07/hadoop1/Hadoop1-1.png">
 
 
@@ -428,7 +429,7 @@
       
 
       
-        <h4 id="大数据的四个特征-4V"><a href="#大数据的四个特征-4V" class="headerlink" title="大数据的四个特征 4V"></a>大数据的四个特征 4V</h4><ul>
+        <h4 id="大数据的四个特征"><a href="#大数据的四个特征" class="headerlink" title="大数据的四个特征"></a>大数据的四个特征</h4><ul>
 <li>Volume    海量的数据规模（TB、PB、EB）</li>
 <li>variety   多样的数据类型（结构化、非结构化、半结构化、其他）</li>
 <li>velocity  快速的数据流转（流、实时、近实时、批量）</li>
@@ -443,6 +444,7 @@
 <li>数据处理、分析、挖掘</li>
 <li>可视化</li>
 </ul>
+<a id="more"></a>
 <h4 id="大数据在技术架构上带来的挑战"><a href="#大数据在技术架构上带来的挑战" class="headerlink" title="大数据在技术架构上带来的挑战"></a>大数据在技术架构上带来的挑战</h4><ul>
 <li>对现有数据库管理技术的挑战，大量的数据</li>
 <li>讲点数据库技术并没有考虑数据的多类别</li>
@@ -505,6 +507,37 @@
 <li>海量数据离线处理</li>
 </ul>
 <h5 id="MapReduce数据流"><a href="#MapReduce数据流" class="headerlink" title="MapReduce数据流"></a>MapReduce数据流</h5><p>  <img src="/2018/11/07/hadoop1/Hadoop1-2.png" alt=""></p>
+<h4 id="Hadoop的优势"><a href="#Hadoop的优势" class="headerlink" title="Hadoop的优势"></a>Hadoop的优势</h4><h5 id="可靠性"><a href="#可靠性" class="headerlink" title="可靠性"></a>可靠性</h5><ul>
+<li>数据存储：数据块多副本</li>
+<li>数据计算：重新调度作业计算</li>
+</ul>
+<h5 id="扩展性"><a href="#扩展性" class="headerlink" title="扩展性"></a>扩展性</h5><ul>
+<li>存储、计算资源不够时，可以横向的线性扩展机器</li>
+<li>一个集群中可以包含数以千计的节点</li>
+</ul>
+<h5 id="其他优势"><a href="#其他优势" class="headerlink" title="其他优势"></a>其他优势</h5><ul>
+<li>存储在廉价机器上，降低成本</li>
+<li>成熟的生态圈，很多框架</li>
+</ul>
+<h4 id="Hadoop生态系统"><a href="#Hadoop生态系统" class="headerlink" title="Hadoop生态系统"></a>Hadoop生态系统</h4><p>  <img src="/2018/11/07/hadoop1/Hadoop1-3.png" alt=""></p>
+<h5 id="Hadoop生态系统的特点"><a href="#Hadoop生态系统的特点" class="headerlink" title="Hadoop生态系统的特点"></a>Hadoop生态系统的特点</h5><ul>
+<li>开源、社区活跃</li>
+<li>囊括了大数据处理的方方面面</li>
+<li>成熟的生态圈</li>
+</ul>
+<h4 id="Hadoop常用发行版及选型"><a href="#Hadoop常用发行版及选型" class="headerlink" title="Hadoop常用发行版及选型"></a>Hadoop常用发行版及选型</h4><h5 id="Apache-Hadoop"><a href="#Apache-Hadoop" class="headerlink" title="Apache Hadoop"></a>Apache Hadoop</h5><ul>
+<li>单个jar包没问题，多个jar包组合使用会产生冲突</li>
+</ul>
+<h5 id="CDH：Cloudera-Distributed-Hadoop"><a href="#CDH：Cloudera-Distributed-Hadoop" class="headerlink" title="CDH：Cloudera Distributed Hadoop"></a>CDH：Cloudera Distributed Hadoop</h5><ul>
+<li>通过浏览器页面安装，配置、升级简单</li>
+<li>所有jar包都选择相同的CDH版本号，这样就不会产生冲突</li>
+<li>非开源</li>
+<li><a href="http://archive.cloudera.com/cdh5/cdh/5/" target="_blank" rel="noopener">下载地址</a></li>
+</ul>
+<h5 id="HDP：Hortonworks-Data-Platform"><a href="#HDP：Hortonworks-Data-Platform" class="headerlink" title="HDP：Hortonworks Data Platform"></a>HDP：Hortonworks Data Platform</h5><ul>
+<li>开源</li>
+<li>较CDH安装升级麻烦</li>
+</ul>
 
       
     </div>
@@ -731,7 +764,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据的四个特征-4V"><span class="nav-text">大数据的四个特征 4V</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据要解决的问题"><span class="nav-text">大数据要解决的问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据涉及到的技术"><span class="nav-text">大数据涉及到的技术</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据在技术架构上带来的挑战"><span class="nav-text">大数据在技术架构上带来的挑战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据带来的其他挑战"><span class="nav-text">大数据带来的其他挑战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何对大数据进行存储和分析"><span class="nav-text">如何对大数据进行存储和分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hadoop概述"><span class="nav-text">Hadoop概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据能做什么"><span class="nav-text">大数据能做什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分布式文件系统HDFS"><span class="nav-text">分布式文件系统HDFS</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#HDFS特点"><span class="nav-text">HDFS特点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#资源调度系统YARN"><span class="nav-text">资源调度系统YARN</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#YARN的特点"><span class="nav-text">YARN的特点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分布式计算框架MapReduce"><span class="nav-text">分布式计算框架MapReduce</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#MapReduce特点"><span class="nav-text">MapReduce特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#MapReduce数据流"><span class="nav-text">MapReduce数据流</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据的四个特征"><span class="nav-text">大数据的四个特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据要解决的问题"><span class="nav-text">大数据要解决的问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据涉及到的技术"><span class="nav-text">大数据涉及到的技术</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据在技术架构上带来的挑战"><span class="nav-text">大数据在技术架构上带来的挑战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据带来的其他挑战"><span class="nav-text">大数据带来的其他挑战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何对大数据进行存储和分析"><span class="nav-text">如何对大数据进行存储和分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hadoop概述"><span class="nav-text">Hadoop概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据能做什么"><span class="nav-text">大数据能做什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分布式文件系统HDFS"><span class="nav-text">分布式文件系统HDFS</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#HDFS特点"><span class="nav-text">HDFS特点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#资源调度系统YARN"><span class="nav-text">资源调度系统YARN</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#YARN的特点"><span class="nav-text">YARN的特点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分布式计算框架MapReduce"><span class="nav-text">分布式计算框架MapReduce</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#MapReduce特点"><span class="nav-text">MapReduce特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#MapReduce数据流"><span class="nav-text">MapReduce数据流</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hadoop的优势"><span class="nav-text">Hadoop的优势</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#可靠性"><span class="nav-text">可靠性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#扩展性"><span class="nav-text">扩展性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他优势"><span class="nav-text">其他优势</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hadoop生态系统"><span class="nav-text">Hadoop生态系统</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Hadoop生态系统的特点"><span class="nav-text">Hadoop生态系统的特点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hadoop常用发行版及选型"><span class="nav-text">Hadoop常用发行版及选型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Apache-Hadoop"><span class="nav-text">Apache Hadoop</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#CDH：Cloudera-Distributed-Hadoop"><span class="nav-text">CDH：Cloudera Distributed Hadoop</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#HDP：Hortonworks-Data-Platform"><span class="nav-text">HDP：Hortonworks Data Platform</span></a></li></ol></li></ol></div>
             
 
           </div>
