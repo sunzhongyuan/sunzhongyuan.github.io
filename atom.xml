@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-11-26T14:04:41.412Z</updated>
+  <updated>2018-11-26T15:58:04.355Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>eclipse相关链接记录</title>
+    <link href="http://sunzhongyuan.net/2018/11/26/eclipse-url/"/>
+    <id>http://sunzhongyuan.net/2018/11/26/eclipse-url/</id>
+    <published>2018-11-26T15:50:03.000Z</published>
+    <updated>2018-11-26T15:58:04.355Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;eclipse的各种版本号及代号及下载&quot;&gt;&lt;a href=&quot;#eclipse的各种版本号及代号及下载&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="eclipse" scheme="http://sunzhongyuan.net/categories/eclipse/"/>
+    
+    
+      <category term="eclipse" scheme="http://sunzhongyuan.net/tags/eclipse/"/>
+    
+  </entry>
   
   <entry>
     <title>Java基础回顾1</title>
