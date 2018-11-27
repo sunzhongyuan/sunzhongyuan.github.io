@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-11-26T16:01:40.603Z</updated>
+  <updated>2018-11-27T12:59:46.665Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -17,11 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>eclipse相关链接记录</title>
+    <title>javase2</title>
+    <link href="http://sunzhongyuan.net/2018/11/27/javase2/"/>
+    <id>http://sunzhongyuan.net/2018/11/27/javase2/</id>
+    <published>2018-11-27T12:59:46.000Z</published>
+    <updated>2018-11-27T12:59:46.665Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>eclipse相关记录</title>
     <link href="http://sunzhongyuan.net/2018/11/26/eclipse-url/"/>
     <id>http://sunzhongyuan.net/2018/11/26/eclipse-url/</id>
     <published>2018-11-26T15:50:03.000Z</published>
-    <updated>2018-11-26T16:01:40.603Z</updated>
+    <updated>2018-11-27T14:37:41.593Z</updated>
     
     <summary type="html">
     

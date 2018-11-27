@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[eclipse相关链接记录]]></title>
+    <title><![CDATA[javase2]]></title>
+    <url>%2F2018%2F11%2F27%2Fjavase2%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[eclipse相关记录]]></title>
     <url>%2F2018%2F11%2F26%2Feclipse-url%2F</url>
-    <content type="text"><![CDATA[eclipse最新版本下载地址https://www.eclipse.org/downloads/ eclipse的各种版本号及代号及下载地址https://wiki.eclipse.org/Older_Versions_Of_Eclipse eclipse汉化包地址https://www.eclipse.org/babel/downloads.php]]></content>
+    <content type="text"><![CDATA[eclipse最新版本下载地址https://www.eclipse.org/downloads/ eclipse的各种版本号及代号及下载地址https://wiki.eclipse.org/Older_Versions_Of_Eclipse eclipse汉化包地址https://www.eclipse.org/babel/downloads.php eclipse常用快捷键 单行注释//: ctrl+/ command+/ 多行注释/**/:ctrl+shift+/ ctrl+command+/ 取消多行注释:ctrl+shift+\ ctrl+command+\ 自动补齐:alt+/ option+/ 快速修正:ctrl+1 command+1 删除:ctrl+d command+d 代码格式化:ctrl+shift+f command+shift+f 实现包的导入，去除无用的包:ctrl+shift+o command+shift+o 打开帮助文档:shift+F2 shift+F2 显示搜索对话框:ctrl+h ctrl+h 上一个/下一个光标位置:alt+left/right]]></content>
       <categories>
         <category>eclipse</category>
       </categories>
