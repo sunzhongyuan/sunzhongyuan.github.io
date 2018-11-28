@@ -73,7 +73,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java,java基础," />
 
 
 
@@ -86,17 +86,18 @@
 
 
 
-<meta name="description" content="O ever youthful,O ever weeping.">
+<meta name="description" content="面向对象面向对象是对现实世界理解和抽象的一种方法三大特征：封装、继承、多态">
+<meta name="keywords" content="java,java基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javase2">
+<meta property="og:title" content="java基础回归2">
 <meta property="og:url" content="http://sunzhongyuan.net/2018/11/27/javase2/index.html">
 <meta property="og:site_name" content="编码的手艺人">
-<meta property="og:description" content="O ever youthful,O ever weeping.">
+<meta property="og:description" content="面向对象面向对象是对现实世界理解和抽象的一种方法三大特征：封装、继承、多态">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-27T12:59:46.665Z">
+<meta property="og:updated_time" content="2018-11-28T15:34:48.409Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javase2">
-<meta name="twitter:description" content="O ever youthful,O ever weeping.">
+<meta name="twitter:title" content="java基础回归2">
+<meta name="twitter:description" content="面向对象面向对象是对现实世界理解和抽象的一种方法三大特征：封装、继承、多态">
 
 
 
@@ -132,7 +133,7 @@
 
 
 
-  <title>javase2 | 编码的手艺人</title>
+  <title>java基础回归2 | 编码的手艺人</title>
   
 
 
@@ -320,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">javase2</h1>
+          <h1 class="post-title" itemprop="name headline">java基础回归2</h1>
         
 
         <div class="post-meta">
@@ -343,6 +344,39 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/java基础/" itemprop="url" rel="index">
+                    <span itemprop="name">java基础</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -360,7 +394,7 @@
 
           
           
-             <span id="/2018/11/27/javase2/" class="leancloud_visitors" data-flag-title="javase2">
+             <span id="/2018/11/27/javase2/" class="leancloud_visitors" data-flag-title="java基础回归2">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -391,7 +425,44 @@
       
 
       
-        
+        <h4 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h4><p>面向对象是对现实世界理解和抽象的一种方法<br>三大特征：封装、继承、多态</p>
+<a id="more"></a>
+<h5 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h5><p>对象指一个具体的实例，包含属性和方法。</p>
+<h5 id="类"><a href="#类" class="headerlink" title="类"></a>类</h5><p>具有相同属性和方法的一组对象的集合<br>类可以有子类</p>
+<h5 id="类和对象的关系"><a href="#类和对象的关系" class="headerlink" title="类和对象的关系"></a>类和对象的关系</h5><p>类实例化出具体的对象</p>
+<h5 id="类的创建"><a href="#类的创建" class="headerlink" title="类的创建"></a>类的创建</h5><p>java用来处理数据，数据类型包括下列几种，java提供了一些，我们也可以创建自己需要的数据类型</p>
+<ul>
+<li>基本数据类型：四类八种</li>
+<li>引用数据类型：String 数组 接口等<ul>
+<li>自定义的数据类型-用户自己创建的类</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span>修饰的就是类，包含这一类事物都包含的属性和方法，就不举例子了</span></span><br></pre></td></tr></table></figure>
+<h5 id="实例化对象"><a href="#实例化对象" class="headerlink" title="实例化对象"></a>实例化对象</h5><p>用类实例化一个具体的对象，这个对象拥有这个类的属性和方法，对象可以给这些属性赋值；如果两个对象的属性赋值都相同，这两个对象也是相互独立的个体，互不影响。<br><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">类名 对象名<span class="number">1</span> = new 类名()<span class="comment">;</span></span><br><span class="line">类名 对象名<span class="number">2</span> = new 类名()<span class="comment">;</span></span><br><span class="line">对象名<span class="number">1</span>.name = <span class="string">"对象1"</span><span class="comment">;</span></span><br><span class="line">对象名<span class="number">2</span>.name = <span class="string">"对象2"</span><span class="comment">;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="成员变量和局部变量"><a href="#成员变量和局部变量" class="headerlink" title="成员变量和局部变量"></a>成员变量和局部变量</h4><ul>
+<li>成员变量：定义在类里的属性；存储在堆中。     </li>
+<li>局部变量：在局部内定义，在局部内有效，如方法体里定义，for循环内定义的变量；存储在栈中，生命周期长于成员变量     </li>
+<li>如果在一个方法体内有一个局部变量名和成员变量名重复，在方法体内调用这个变量时是局部变量的值</li>
+</ul>
+<blockquote>
+<p>堆Heap：临时的，由创建对象时所开辟的一块空间，对象销毁后，系统回收<br>栈：是方法生成的时候，压栈生成，整个程序结束后才销毁</p>
+</blockquote>
+<h4 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h4><ol>
+<li>将类的属性改为私有private，不让对象直接给属性赋值。</li>
+<li>在类里写set和get方法，对象调用set方法给属性赋值，get方法获取属性的值，好处是set方法可以限制赋值的范围，保证数据规范性。（eclipse可以根据属性自动生成get和set方法）</li>
+</ol>
+<h4 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h4><ul>
+<li>构造函数是一种特殊方法，主要用来对对象进行初始化，实例化对象时new后边的就是构造函数</li>
+<li>构造函数的函数名要与类名一致</li>
+<li>一个类可以有多个构造函数，参数不同，实现构造函数的重载</li>
+<li>构造函数没有返回值</li>
+<li>构造函数默认存在一个无参的</li>
+<li>实例化对象时调用且值调用一次</li>
+<li>如果构造函数调用失败，则无法创建对象</li>
+<li>实例化对象时是由java虚拟机调用的构造函数</li>
+</ul>
+
       
     </div>
     
@@ -411,7 +482,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://sunzhongyuan.net/2018/11/27/javase2/" title="javase2">http://sunzhongyuan.net/2018/11/27/javase2/</a>
+    <a href="http://sunzhongyuan.net/2018/11/27/javase2/" title="java基础回归2">http://sunzhongyuan.net/2018/11/27/javase2/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -423,6 +494,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/java基础/" rel="tag"># java基础</a>
+          
+        </div>
       
 
       
@@ -496,8 +575,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -592,6 +680,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象"><span class="nav-text">面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#对象"><span class="nav-text">对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类"><span class="nav-text">类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类和对象的关系"><span class="nav-text">类和对象的关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类的创建"><span class="nav-text">类的创建</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实例化对象"><span class="nav-text">实例化对象</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#成员变量和局部变量"><span class="nav-text">成员变量和局部变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#封装"><span class="nav-text">封装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#构造函数"><span class="nav-text">构造函数</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

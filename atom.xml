@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-11-27T12:59:46.665Z</updated>
+  <updated>2018-11-28T15:34:48.409Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -17,16 +17,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>javase2</title>
+    <title>java基础回归2</title>
     <link href="http://sunzhongyuan.net/2018/11/27/javase2/"/>
     <id>http://sunzhongyuan.net/2018/11/27/javase2/</id>
     <published>2018-11-27T12:59:46.000Z</published>
-    <updated>2018-11-27T12:59:46.665Z</updated>
+    <updated>2018-11-28T15:34:48.409Z</updated>
     
     <summary type="html">
     
+      &lt;h4 id=&quot;面向对象&quot;&gt;&lt;a href=&quot;#面向对象&quot; class=&quot;headerlink&quot; title=&quot;面向对象&quot;&gt;&lt;/a&gt;面向对象&lt;/h4&gt;&lt;p&gt;面向对象是对现实世界理解和抽象的一种方法&lt;br&gt;三大特征：封装、继承、多态&lt;/p&gt;
+    
     </summary>
     
+      <category term="java" scheme="http://sunzhongyuan.net/categories/java/"/>
+    
+      <category term="java基础" scheme="http://sunzhongyuan.net/categories/java/java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="java" scheme="http://sunzhongyuan.net/tags/java/"/>
+    
+      <category term="java基础" scheme="http://sunzhongyuan.net/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
