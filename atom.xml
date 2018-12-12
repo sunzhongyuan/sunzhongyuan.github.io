@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-12-03T13:38:57.819Z</updated>
+  <updated>2018-12-12T15:45:06.519Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java基础回顾4</title>
+    <link href="http://sunzhongyuan.net/2018/12/04/javase4/"/>
+    <id>http://sunzhongyuan.net/2018/12/04/javase4/</id>
+    <published>2018-12-04T14:02:37.000Z</published>
+    <updated>2018-12-12T15:45:06.519Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;Java-API&quot;&gt;&lt;a href=&quot;#Java-API&quot; class=&quot;headerlink&quot; title=&quot;Java API&quot;&gt;&lt;/a&gt;Java API&lt;/h4&gt;&lt;p&gt;java.lang –核心包，不用引用，直接使用&lt;/p&gt;
+&lt;h5
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="http://sunzhongyuan.net/categories/java/"/>
+    
+      <category term="java基础" scheme="http://sunzhongyuan.net/categories/java/java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="java" scheme="http://sunzhongyuan.net/tags/java/"/>
+    
+      <category term="java基础" scheme="http://sunzhongyuan.net/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>java基础回顾3</title>
