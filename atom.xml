@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2019-01-02T08:44:35.624Z</updated>
+  <updated>2019-01-02T08:54:37.817Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -21,17 +21,16 @@
     <link href="http://sunzhongyuan.net/2018/12/13/javase5/"/>
     <id>http://sunzhongyuan.net/2018/12/13/javase5/</id>
     <published>2018-12-13T13:13:27.000Z</published>
-    <updated>2019-01-02T08:44:35.624Z</updated>
+    <updated>2019-01-02T08:54:37.817Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;集合类-可变容器类&quot;&gt;&lt;a href=&quot;#集合类-可变容器类&quot; class=&quot;headerlink&quot; title=&quot;集合类 可变容器类&quot;&gt;&lt;/a&gt;集合类
-        
-      
+      &lt;h4 id=&quot;集合类-可变容器类&quot;&gt;&lt;a href=&quot;#集合类-可变容器类&quot; class=&quot;headerlink&quot; title=&quot;集合类 可变容器类&quot;&gt;&lt;/a&gt;集合类 可变容器类&lt;/h4&gt;&lt;p&gt;与数组相比集合主要针对数据长度可变的情况&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;集合与数组的区别：&lt;ol&gt;
+&lt;li&gt;数组是固定长度，集合的长度是可变的&lt;/li&gt;
+&lt;li&gt;数组只能存放基本数据类型，集合只能放引用数据类型&lt;/li&gt;
+&lt;li&gt;集合中对于基本数据类型会转换为引用数据类型再存储&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
