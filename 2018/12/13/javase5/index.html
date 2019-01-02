@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next mist" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="java,java基础," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="编码的手艺人" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="集合类 可变容器类与数组相比集合主要针对数据长度可变的情况，  集合与数组的区别： 数组是固定长度，集合的长度是可变的 数组只能存放基本数据类型，集合只能放引用数据类型 集合中对于基本数据类型会转换为引用数据类型再存储   集合框架    Collection-接口 List-接口：有序可重复，每个元素都有对应索引，可以通过索引访问指定位置的元素 ArrayList-实现类：除了实现了List接口">
+<meta name="keywords" content="java,java基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javase5">
+<meta property="og:url" content="http://sunzhongyuan.net/2018/12/13/javase5/index.html">
+<meta property="og:site_name" content="编码的手艺人">
+<meta property="og:description" content="集合类 可变容器类与数组相比集合主要针对数据长度可变的情况，  集合与数组的区别： 数组是固定长度，集合的长度是可变的 数组只能存放基本数据类型，集合只能放引用数据类型 集合中对于基本数据类型会转换为引用数据类型再存储   集合框架    Collection-接口 List-接口：有序可重复，每个元素都有对应索引，可以通过索引访问指定位置的元素 ArrayList-实现类：除了实现了List接口">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://sunzhongyuan.net/2018/12/13/javase5/集合类关系图.jpg">
+<meta property="og:updated_time" content="2019-01-02T08:44:35.624Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javase5">
+<meta name="twitter:description" content="集合类 可变容器类与数组相比集合主要针对数据长度可变的情况，  集合与数组的区别： 数组是固定长度，集合的长度是可变的 数组只能存放基本数据类型，集合只能放引用数据类型 集合中对于基本数据类型会转换为引用数据类型再存储   集合框架    Collection-接口 List-接口：有序可重复，每个元素都有对应索引，可以通过索引访问指定位置的元素 ArrayList-实现类：除了实现了List接口">
+<meta name="twitter:image" content="http://sunzhongyuan.net/2018/12/13/javase5/集合类关系图.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://sunzhongyuan.net/2018/12/13/javase5/"/>
+
+
+
+
+
+  <title>javase5 | 编码的手艺人</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?81f5b4cbc06c78744e119c3c295915bf";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">编码的手艺人</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">O ever youthful,O ever weeping.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://sunzhongyuan.net/2018/12/13/javase5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zyzy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="编码的手艺人">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">javase5</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-13T21:13:27+08:00">
+                2018-12-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/java基础/" itemprop="url" rel="index">
+                    <span itemprop="name">java基础</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/13/javase5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/13/javase5/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/12/13/javase5/" class="leancloud_visitors" data-flag-title="javase5">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="集合类-可变容器类"><a href="#集合类-可变容器类" class="headerlink" title="集合类 可变容器类"></a>集合类 可变容器类</h4><p>与数组相比集合主要针对数据长度可变的情况，</p>
+<ul>
+<li>集合与数组的区别：<ol>
+<li>数组是固定长度，集合的长度是可变的</li>
+<li>数组只能存放基本数据类型，集合只能放引用数据类型</li>
+<li>集合中对于基本数据类型会转换为引用数据类型再存储</li>
+</ol>
+</li>
+<li>集合框架<br><img src="/2018/12/13/javase5/集合类关系图.jpg" alt="">   <ul>
+<li>Collection-接口<ul>
+<li>List-接口：有序可重复，每个元素都有对应索引，可以通过索引访问指定位置的元素<ul>
+<li>ArrayList-实现类：除了实现了List接口的方法，还额外增加了几个方法，元素允许有null</li>
+<li>LinkedList-实现类：链表类数据结构，添加删除效率高，查询效率不如ArrayList</li>
+</ul>
+</li>
+<li>Set-接口：存放无序不可重复的元素<ul>
+<li>HashSet-实现类：通过一个Hash函数计算产生的HashCode决定该集合存放在哪；添加元素时先比较hashCode，再比较equals方法来判断添加的是否是重复元素</li>
+<li>TreeSet-实现类：</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Map-接口：<ul>
+<li>主要存储键值对key-value键值对，key不能重复<ul>
+<li>HashMap</li>
+<li>HashTable</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="ArrayList与LinkedList的不同"><a href="#ArrayList与LinkedList的不同" class="headerlink" title="ArrayList与LinkedList的不同"></a>ArrayList与LinkedList的不同</h5><ul>
+<li>ArrayList每个元素都有索引，所以查询速度快</li>
+<li>LinkedList是链表结构，将对象存放在独立的空间中，每个空间保存了下一个链接的索引，所以查询速度慢</li>
+</ul>
+<h5 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h5><ul>
+<li>初始化：<ul>
+<li>指定数据类型：<code>ArrayList&lt;E&gt; arrayList=new ArrayList&lt;E&gt;();</code>可以指定ArrayList存放的数据类型，可以是任意数据类型，包括自定义类</li>
+<li>没有指定类型：<code>ArrayList arrayList=new ArrayList();</code>没有指定数据类型，随便存，导致get出来不确定是什么数据类型，所以不常用</li>
+</ul>
+</li>
+<li>主要方法：<ul>
+<li><code>boolean add(E e)</code> 将指定的元素追加到此列表的末尾。  </li>
+<li><code>void add(int index, E element)</code> 在此列表中的指定位置插入指定的元素。  </li>
+<li><code>boolean addAll(Collection&lt;? extends E&gt; c)</code> 按指定集合的Iterator返回的顺序将指定集合中的所有元素追加到此列表的末尾。  </li>
+<li><code>boolean addAll(int index, Collection&lt;? extends E&gt; c)</code> 将指定集合中的所有元素插入到此列表中，从指定的位置开始。  </li>
+<li><code>boolean contains(Object o)</code> 如果此列表包含指定的元素，则返回 true 。</li>
+<li><code>E get(int index)</code> 返回此列表中指定位置的元素。</li>
+<li><code>E remove(int index)</code> 删除该列表中指定位置的元素。</li>
+<li><code>E set(int index, E element)</code> 用指定的元素替换此列表中指定位置的元素</li>
+<li><code>Object[] toArray()</code> 以正确的顺序（从第一个到最后一个元素）返回一个包含此列表中所有元素的数组。</li>
+</ul>
+</li>
+</ul>
+<h5 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h5><ul>
+<li>初始化：同ArrayList</li>
+<li>主要方法：<ul>
+<li><code>void addFirst(E e)</code> 在该列表开头插入指定的元素。</li>
+<li><code>void addLast(E e)</code> 将指定的元素追加到此列表的末尾  </li>
+<li><code>E peekFirst()</code> 检索但不删除此列表的第一个元素，如果此列表为空，则返回 null 。</li>
+<li><code>peekLast()</code> 检索但不删除此列表的最后一个元素，如果此列表为空，则返回 null 。</li>
+<li><code>pop()</code> 从此列表表示的堆栈中弹出一个元素。     </li>
+</ul>
+</li>
+</ul>
+<h5 id="List集合的遍历"><a href="#List集合的遍历" class="headerlink" title="List集合的遍历"></a>List集合的遍历</h5><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;Integer&gt; alist = new ArrayList&lt;Integer&gt;()<span class="comment">;</span></span><br><span class="line">for(<span class="name">int</span> i = <span class="number">0</span><span class="comment">; i&lt;3; i++)&#123;</span></span><br><span class="line">  alist.add(<span class="name">i</span>)<span class="comment">;</span></span><br><span class="line">&#125;</span><br><span class="line">// 方法一：List.size()</span><br><span class="line">for(<span class="name">int</span> i = <span class="number">0</span><span class="comment">; i&lt;alist.size(); i++)&#123;</span></span><br><span class="line">  System.out.println(<span class="name">alist</span>.get(<span class="name">i</span>))<span class="comment">;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方法二：迭代器Iterator</span><br><span class="line">Iterator&lt;Integer&gt; iterator = alist.iterator()<span class="comment">;</span></span><br><span class="line">while(<span class="name">iterator</span>.hasNext())&#123;</span><br><span class="line">  System.out.println(<span class="name">iterator</span>.next())<span class="comment">;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方法三：增强for循环</span><br><span class="line">for(<span class="name">Integer</span> integer<span class="symbol">:alist</span>)&#123;</span><br><span class="line">  System.out.println(<span class="name">integer</span>)<span class="comment">;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方法四：jdk1.<span class="number">8</span>新特性，foreach</span><br><span class="line">alist.foreach(<span class="name">integer-&gt;</span>&#123;System.out.println(<span class="name">integer</span>)<span class="comment">;&#125;);</span></span><br></pre></td></tr></table></figure>
+<h5 id="HashSet"><a href="#HashSet" class="headerlink" title="HashSet"></a>HashSet</h5><ul>
+<li>元素无序不可重复</li>
+<li><code>HashSet&lt;E&gt; hashset = new HashSet&lt;E&gt;();</code></li>
+<li>主要方法：<ul>
+<li><code>boolean add(E e)</code> 将指定的元素添加到此集合（如果尚未存在）。</li>
+<li><code>boolean contains(Object o)</code> 如果此集合包含指定的元素，则返回 true</li>
+</ul>
+</li>
+<li>根据对象的equals方法判断是否是重复元素，所以存放自定义类型需要重写hashCode方法和equals方法<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">  	<span class="keyword">private</span> String id;</span><br><span class="line">  	<span class="keyword">private</span> String name;</span><br><span class="line">  	<span class="keyword">private</span> char sex;</span><br><span class="line"></span><br><span class="line">  	<span class="keyword">public</span> Student(String id,String name,char sex) &#123;</span><br><span class="line">  		<span class="keyword">this</span>.id=id;</span><br><span class="line">  		<span class="keyword">this</span>.name=name;</span><br><span class="line">  		<span class="keyword">this</span>.sex=sex;</span><br><span class="line">  	&#125;</span><br><span class="line">  	<span class="comment">//重写 hashcode</span></span><br><span class="line">  	<span class="keyword">public</span> int hashCode() &#123;</span><br><span class="line">  		 <span class="keyword">return</span> id.hashCode();</span><br><span class="line">  	&#125;</span><br><span class="line">  	<span class="comment">//重写 equals</span></span><br><span class="line">  	<span class="keyword">public</span> boolean equals(Object obj) &#123;</span><br><span class="line">  		<span class="keyword">if</span>(<span class="keyword">this</span> == obj) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  		<span class="keyword">if</span>(obj instanceof Student) &#123;</span><br><span class="line">  			<span class="comment">//向下转型</span></span><br><span class="line">  			Student stu=(Student) obj;</span><br><span class="line">  			<span class="keyword">if</span>(stu.name==<span class="keyword">this</span>.name &amp;&amp; stu.id==<span class="keyword">this</span>.id&amp;&amp; stu.sex==<span class="keyword">this</span>.sex)</span><br><span class="line">  				<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  		&#125;</span><br><span class="line">  		<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">  	&#125;</span><br><span class="line">  	<span class="comment">//重写 toString</span></span><br><span class="line">  	<span class="keyword">public</span> String toString() &#123;</span><br><span class="line">  		<span class="keyword">return</span> <span class="string">"["</span>+<span class="keyword">this</span>.id+<span class="string">","</span>+<span class="keyword">this</span>.name+<span class="string">","</span>+<span class="keyword">this</span>.sex+<span class="string">"]"</span>;</span><br><span class="line">  	&#125;</span><br><span class="line">    ....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="TreeSet"><a href="#TreeSet" class="headerlink" title="TreeSet"></a>TreeSet</h5><p>有序集合，默认将元素按照升序排序，因为实现了Comparable接口</p>
+<ul>
+<li><code>TreeSet&lt;E&gt; treeset = new TreeSet&lt;E&gt;();</code></li>
+<li>自定义数据类型需要实现Comparable<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> <span class="keyword">implements</span> <span class="title">Comparator</span>&lt;<span class="title">Person</span>&gt;</span>&#123;</span><br><span class="line">  	<span class="keyword">private</span> String name;</span><br><span class="line">  	<span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">  	<span class="comment">//无参构造函数</span></span><br><span class="line">  	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  	&#125;</span><br><span class="line"></span><br><span class="line">  	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String name,<span class="keyword">int</span> age)</span> </span>&#123;</span><br><span class="line">  		<span class="keyword">this</span>.name=name;</span><br><span class="line">  		<span class="keyword">this</span>.age=age;</span><br><span class="line">  	&#125;</span><br><span class="line"></span><br><span class="line">  	<span class="comment">/*</span></span><br><span class="line"><span class="comment">  	 * 根据年龄大小进行排序</span></span><br><span class="line"><span class="comment">  	 *</span></span><br><span class="line"><span class="comment">  	 * */</span></span><br><span class="line">  	<span class="meta">@Override</span></span><br><span class="line">  	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Person p1, Person p2)</span> </span>&#123;</span><br><span class="line">  		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">  		<span class="keyword">if</span>(p1.age&gt;p2.age) &#123;</span><br><span class="line">  			<span class="comment">//大于的时候</span></span><br><span class="line">  			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(p1.age&lt;p2.age) &#123;</span><br><span class="line">  			<span class="comment">//小于的时候</span></span><br><span class="line">  			<span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">  		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">  			<span class="comment">//相等的时候</span></span><br><span class="line">  			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  		&#125;</span><br><span class="line">  	&#125;</span><br><span class="line">  	<span class="comment">//重写</span></span><br><span class="line">  	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  		<span class="keyword">return</span> <span class="string">"["</span>+<span class="keyword">this</span>.name+<span class="string">","</span>+<span class="keyword">this</span>.age+<span class="string">"]"</span>;</span><br><span class="line">  	&#125;</span><br><span class="line">....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">TreeSetTest02</span> &#123;</span><br><span class="line">  	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span>(<span class="params">String[] args</span>) </span>&#123;</span><br><span class="line">  		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">  		<span class="comment">// Step 1 初始化 treeset 并指定新的比较器</span></span><br><span class="line">  		TreeSet&lt;Person&gt; ts=<span class="keyword">new</span> TreeSet&lt;Person&gt;(<span class="keyword">new</span> Person());</span><br><span class="line">  		<span class="comment">//step 2 person 初始化		</span></span><br><span class="line">  		Person p1= <span class="keyword">new</span> Person(<span class="string">"张三"</span>,<span class="number">20</span>);</span><br><span class="line">  		Person p2= <span class="keyword">new</span> Person(<span class="string">"李四"</span>,<span class="number">22</span>);</span><br><span class="line">  		Person p3= <span class="keyword">new</span> Person(<span class="string">"王五 "</span>,<span class="number">18</span>);</span><br><span class="line">  		<span class="comment">//step 3 增加对象</span></span><br><span class="line">  		ts.<span class="keyword">add</span>(p1);</span><br><span class="line">  		ts.<span class="keyword">add</span>(p2);</span><br><span class="line">  		ts.<span class="keyword">add</span>(p3);</span><br><span class="line">  		<span class="comment">//自然顺序进行排序</span></span><br><span class="line">  		System.<span class="keyword">out</span>.println(ts);</span><br><span class="line">  	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h5><p><code>public class HashMap&lt;K,V&gt;extends AbstractMap&lt;K,V&gt; implements Map&lt;K,V&gt;, Cloneable, Serializable</code><br>允许null的值和null键。<br><code>HashMap&lt;key,value&gt; hashMap=new HashMap&lt;key,value&gt; ();</code>  </p>
+<p>常用方法：</p>
+<ul>
+<li><code>put(K key, V value)</code>  将指定的值与此映射中的指定键相关联</li>
+<li><code>get(Object key)</code> 返回到指定键所映射的值，或 null如果此映射包含该键的映射。</li>
+<li><code>Set&lt;K&gt; keySet()</code> 返回此地图中包含的键的Set视图。</li>
+<li><code>boolean containsKey(Object key)</code> 如果此映射包含指定键的映射，则返回 true 。  </li>
+<li><code>boolean containsValue(Object value)</code> 如果此地图将一个或多个键映射到指定值，则返回 true 。</li>
+</ul>
+<p>循环HashSet：<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//step 1 初始化 HashMap</span></span><br><span class="line"><span class="keyword">HashMap</span>&lt;<span class="keyword">String</span>,Student&gt; hashMap=<span class="keyword">new</span> <span class="keyword">HashMap</span>&lt;<span class="keyword">String</span>,Student&gt; ();</span><br><span class="line"><span class="comment">//step2  初始化学生对象</span></span><br><span class="line"></span><br><span class="line">Student stu1=<span class="keyword">new</span> Student(<span class="string">"20180001"</span>,<span class="string">"张三"</span>,<span class="string">'男'</span>);</span><br><span class="line">Student stu2=<span class="keyword">new</span> Student(<span class="string">"20180002"</span>,<span class="string">"李四"</span>,<span class="string">'男'</span>);</span><br><span class="line">Student stu3=<span class="keyword">new</span> Student(<span class="string">"20180003"</span>,<span class="string">"王五"</span>,<span class="string">'男'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//step 3 put key 可以自己定义 也可以使用既有的 最好有规范 便于计算。 wordCount</span></span><br><span class="line"><span class="comment">//不能重复</span></span><br><span class="line">hashMap.put(<span class="string">"00000011"</span>, stu1);</span><br><span class="line">hashMap.put(stu2.getId(),stu2);</span><br><span class="line">hashMap.put(<span class="string">"00000012"</span>,stu3);</span><br><span class="line"><span class="comment">//允许 null值</span></span><br><span class="line">hashMap.put(<span class="keyword">null</span>,<span class="keyword">null</span>);</span><br><span class="line"><span class="comment">//循环hashMap</span></span><br><span class="line"><span class="comment">// 4-1 keyset 通过 Map当中的 keyset方法 获得 key的 set集合</span></span><br><span class="line">Set&lt;<span class="keyword">String</span>&gt; keyset=hashMap.keySet();</span><br><span class="line">Iterator&lt;<span class="keyword">String</span>&gt; it=keyset.iterator();</span><br><span class="line">    <span class="keyword">while</span>(it.hasNext()) &#123;</span><br><span class="line">    <span class="keyword">String</span> <span class="built_in">key</span>=it.next();</span><br><span class="line">    System.out.<span class="built_in">println</span>(<span class="built_in">key</span>+<span class="string">":"</span>+hashMap.<span class="built_in">get</span>(<span class="built_in">key</span>));</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//4-2 entrySet Collettion---推荐使用</span></span><br><span class="line">Iterator it2=hashMap.entrySet().iterator();</span><br><span class="line"><span class="keyword">while</span>(it2.hasNext()) &#123;</span><br><span class="line">    <span class="comment">//获得entry entry 是一个接口  类似 instanceof 向下转型</span></span><br><span class="line">    Map.Entry&lt;<span class="keyword">String</span>, Student&gt; entry=(Map.Entry&lt;<span class="keyword">String</span>, Student&gt;)it2.next();</span><br><span class="line">    System.out.<span class="built_in">println</span>(entry.getKey()+<span class="string">":"</span>+entry.getValue());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="HashTable"><a href="#HashTable" class="headerlink" title="HashTable"></a>HashTable</h5><p>不接受Null，为了成功的在hashtable中存储和获取对象，用作键的对象必须实现 hashcode和equals方法。<br><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Step 1 初始化 hash表</span></span><br><span class="line">Hashtable&lt;<span class="keyword">String</span>,Student&gt; hashTable=<span class="keyword">new</span> Hashtable&lt;<span class="keyword">String</span>,Student&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">//step2  初始化学生对象</span></span><br><span class="line">Student stu1=<span class="keyword">new</span> Student(<span class="string">"20180001"</span>,<span class="string">"张三"</span>,<span class="string">'男'</span>);</span><br><span class="line">Student stu2=<span class="keyword">new</span> Student(<span class="string">"20180002"</span>,<span class="string">"李四"</span>,<span class="string">'男'</span>);</span><br><span class="line">Student stu3=<span class="keyword">new</span> Student(<span class="string">"20180003"</span>,<span class="string">"王五"</span>,<span class="string">'男'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//step 3 put key 可以自己定义 也可以使用既有的 最好有规范 便于计算。 wordCount</span></span><br><span class="line"><span class="comment">//不能重复</span></span><br><span class="line">hashTable.<span class="built_in">put</span>(<span class="string">"00000011"</span>, stu1);</span><br><span class="line">hashTable.<span class="built_in">put</span>(stu2.getId(),stu2);</span><br><span class="line">hashTable.<span class="built_in">put</span>(<span class="string">"00000012"</span>,stu3);</span><br><span class="line"><span class="comment">//不允许 null值</span></span><br><span class="line"><span class="comment">// hashTable.put(null,null);</span></span><br><span class="line"><span class="comment">//hashTable 特有的循环 Enumeration&lt;V&gt; elements() 返回此散列表中值的枚举。</span></span><br><span class="line">Enumeration&lt;<span class="keyword">String</span>&gt; enu=hashTable.keys();</span><br><span class="line"><span class="built_in">while</span>(enu.hasMoreElements()<span class="comment">/*类比 hasNext*/</span>) &#123;</span><br><span class="line">    <span class="keyword">String</span> key=enu.nextElement();</span><br><span class="line">    System.out.<span class="built_in">println</span>(key+<span class="string">":"</span>+hashTable.<span class="built_in">get</span>(key));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    zyzy
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://sunzhongyuan.net/2018/12/13/javase5/" title="javase5">http://sunzhongyuan.net/2018/12/13/javase5/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/java基础/" rel="tag"># java基础</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/04/javase4/" rel="next" title="java基础回顾4">
+                <i class="fa fa-chevron-left"></i> java基础回顾4
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="zyzy" />
+            
+              <p class="site-author-name" itemprop="name">zyzy</p>
+              <p class="site-description motion-element" itemprop="description">O ever youthful,O ever weeping.</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:sun_zhongyuan@sina.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.baidu.com/" title="baidu" target="_blank">baidu</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#集合类-可变容器类"><span class="nav-text">集合类 可变容器类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ArrayList与LinkedList的不同"><span class="nav-text">ArrayList与LinkedList的不同</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ArrayList"><span class="nav-text">ArrayList</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#LinkedList"><span class="nav-text">LinkedList</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#List集合的遍历"><span class="nav-text">List集合的遍历</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#HashSet"><span class="nav-text">HashSet</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#TreeSet"><span class="nav-text">TreeSet</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#HashMap"><span class="nav-text">HashMap</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#HashTable"><span class="nav-text">HashTable</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zyzy</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'B83jXQpiIPFkAU31TaIRNF6k-gzGzoHsz',
+        appKey: 'zMRSqg2s8UVpYPw6vpsFTpUU',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: true
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
+
+</body>
+</html>

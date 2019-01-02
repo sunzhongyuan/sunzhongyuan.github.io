@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunzhongyuan.net/"/>
-  <updated>2018-12-12T15:47:24.841Z</updated>
+  <updated>2019-01-02T08:44:35.624Z</updated>
   <id>http://sunzhongyuan.net/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javase5</title>
+    <link href="http://sunzhongyuan.net/2018/12/13/javase5/"/>
+    <id>http://sunzhongyuan.net/2018/12/13/javase5/</id>
+    <published>2018-12-13T13:13:27.000Z</published>
+    <updated>2019-01-02T08:44:35.624Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;集合类-可变容器类&quot;&gt;&lt;a href=&quot;#集合类-可变容器类&quot; class=&quot;headerlink&quot; title=&quot;集合类 可变容器类&quot;&gt;&lt;/a&gt;集合类
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="http://sunzhongyuan.net/categories/java/"/>
+    
+      <category term="java基础" scheme="http://sunzhongyuan.net/categories/java/java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="java" scheme="http://sunzhongyuan.net/tags/java/"/>
+    
+      <category term="java基础" scheme="http://sunzhongyuan.net/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>java基础回顾4</title>
