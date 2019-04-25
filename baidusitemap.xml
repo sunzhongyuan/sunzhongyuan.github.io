@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://sunzhongyuan.net/2019/04/25/diary/</loc>
+    <lastmod>2019-04-25T12:09:56.059Z</lastmod>
+    <data>
+        <display>
+        <title>每周流水账</title>
+        <pubTime>2019-04-25T12:00:50.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://sunzhongyuan.net/2018/12/13/javase5/</loc>
     <lastmod>2019-01-02T09:46:38.958Z</lastmod>
     <data>
@@ -272,9 +287,9 @@
         <title>linux开启ssh服务</title>
         <pubTime>2018-09-01T16:29:56.000Z</pubTime>
         
-        <tag>linux</tag>
-         
         <tag>ssh</tag>
+         
+        <tag>linux</tag>
          
          
            
